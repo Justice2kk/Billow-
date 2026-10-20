@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/billow-public-banner.svg" width="100%" alt="Billow! Public repository — an illustrated look at a creative environment for apps, sites and developer tools." />
+  <img src="assets/billow-public-banner.webp" width="100%" alt="Billow! Public repository — an illustrated look at a creative environment for apps, sites and developer tools." />
 </p>
 
 # Billow! — a platform to make things.
