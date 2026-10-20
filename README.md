@@ -2,7 +2,7 @@
   <img src="assets/cielori-public-banner.webp" width="100%" alt="Cielori! Public repository — an illustrated look at a creative environment for apps, sites and developer tools." />
 </p>
 
-# Cielori! — a platform to make things.
+# Cielori — a platform to make things.
 
 **An operating environment and creator platform built inside Roblox.** Open apps, explore sites, work with files—and, when you feel like making something yourself, build on the same platform.
 
