@@ -1,6 +1,6 @@
 # Questions you might have
 
-### Is BillowOS a real operating system?
+### Is Cielori a real operating system?
 
 It's a **hosted operating environment inside Roblox**, not a replacement for Windows, macOS, Linux or your phone's OS. It has its own apps, files, windows and services, using Roblox as the host.
 
@@ -14,21 +14,21 @@ Not to explore the desktop or use everyday apps. To make a website or applicatio
 
 ### Can I run my existing website unchanged?
 
-Don't assume that. Billow doesn't support everything a browser does, and it has its own `billow://` routing, permission and publication rules. Begin with [the web guide](../web/README.md).
+Don't assume that. Cielori doesn't support everything a browser does, and it has its own `billow://` routing, permission and publication rules. Begin with [the web guide](../web/README.md).
 
 ### What about JavaScript and TypeScript?
 
-TypeScript is the default Billow creator-app language, with JavaScript and Luau alternatives. Web page scripting remains more restricted and feature-gated. Internal acceptance doesn't automatically imply a generally available public release.
+TypeScript is the default Cielori creator-app language, with JavaScript and Luau alternatives. Web page scripting remains more restricted and feature-gated. Internal acceptance doesn't automatically imply a generally available public release.
 
-### Is Billow already publicly playable?
+### Is Cielori already publicly playable?
 
-This repository does **not** announce a public Roblox release. Check official Billow release channels for availability; internal testing and public distribution are different steps.
+This repository does **not** announce a public Roblox release. Check official Cielori release channels for availability; internal testing and public distribution are different steps.
 
-### Is this repository the entire BillowOS source code?
+### Is this repository the entire Cielori source code?
 
 No. This is the **public developer and documentation surface**, not a mirror of the private engine implementation.
 
-### Can I download BillowOS from this repo?
+### Can I download Cielori from this repo?
 
 Not as a standalone operating system. The docs and examples are useful to explore, but they aren't a desktop installer.
 

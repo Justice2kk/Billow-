@@ -1,6 +1,6 @@
-# Where Billow is headed
+# Where Cielori is headed
 
-Billow is growing into a place where using something and making something feel like parts of the same experience.
+Cielori is growing into a place where using something and making something feel like parts of the same experience.
 
 This roadmap is a **direction**, not a launch-date promise. The current internal Creator language cutover and static HTML/CSS Sites journey have passed their documented acceptance gates; that does not automatically make them publicly available.
 
@@ -14,11 +14,11 @@ This roadmap is a **direction**, not a launch-date promise. The current internal
 ## Next: make building easier
 
 - Publish better real-world examples with verified packaging and creation steps.
-- Explain Billow app APIs in a form creators can use without private source access.
+- Explain Cielori app APIs in a form creators can use without private source access.
 - Expand website and page-program documentation only as supported features pass tests.
 - Make support differences easier to search than a long compatibility table.
 
-## Longer-term: build on Billow
+## Longer-term: build on Cielori
 
 The larger vision includes richer creator tooling, applications, sites and community-made spaces. Specific release timing, economics and future capabilities remain open until announced and verified.
 

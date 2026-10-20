@@ -1,14 +1,14 @@
-# Applications in Billow
+# Applications in Cielori
 
-An application is a thing you can launch, use and close—just like the apps you're used to. In Billow, it can also be something **you build**.
+An application is a thing you can launch, use and close—just like the apps you're used to. In Cielori, it can also be something **you build**.
 
-The accepted Creator workflow supports **TypeScript first**, with **JavaScript and Luau** as alternatives. Billo Loom provides an in-platform creator workbench. Public authoring/tool availability can differ from the internally tested implementation.
+The accepted Creator workflow supports **TypeScript first**, with **JavaScript and Luau** as alternatives. Loom provides an in-platform creator workbench. Public authoring/tool availability can differ from the internally tested implementation.
 
 [**New to making apps? Start here →**](../getting-started/BUILD_AN_APP.md)
 
-## Meet the Billow APIs
+## Meet the Cielori APIs
 
-Billow applications use controlled platform APIs rather than reaching into Roblox's engine directly.
+Cielori applications use controlled platform APIs rather than reaching into Roblox's engine directly.
 
 | API | What it's for |
 | --- | --- |
@@ -23,7 +23,7 @@ Billow applications use controlled platform APIs rather than reaching into Roblo
 
 ### An important rule
 
-Having an API available is not the same as having **permission**. Billow grants capabilities for specific operations and resources. A guessed file ID or process number isn't permission; neither is an app manifest that simply requests broad access.
+Having an API available is not the same as having **permission**. Cielori grants capabilities for specific operations and resources. A guessed file ID or process number isn't permission; neither is an app manifest that simply requests broad access.
 
 An app's window is not the same thing as its process or package. Those are distinct parts of the platform so apps can be managed safely and predictably.
 
