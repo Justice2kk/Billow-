@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-20 — a friendlier front door
+
+- redesigned the public README around what visitors actually want to make;
+- added a repository banner, clearer navigation and an honest project-status summary;
+- introduced beginner guides for websites and applications, plus a plain-English FAQ;
+- simplified documentation discovery and the application/web entry points;
+- clarified the difference between internally accepted Creator/Sites workflows and public runtime availability;
+- kept the compatibility registry and private/public boundary unchanged.
+
 ## 2026-10-06 — public developer-platform foundation
 
 - replaced the placeholder public skeleton with independently understandable platform documentation;

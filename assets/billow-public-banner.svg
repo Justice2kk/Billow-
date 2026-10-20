@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Billow! — A platform to make things</title>
+<desc id="d">Clean editorial banner with the Billow wordmark and an illustrated creator desktop featuring Apps, Sites and Studio tools.</desc>
+<defs>
+  <linearGradient id="background" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fefeff"/><stop offset="1" stop-color="#f6f7ff"/></linearGradient>
+  <linearGradient id="brand" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#5ca6ff"/><stop offset="1" stop-color="#3854f6"/></linearGradient>
+  <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e5e9ff"/><stop offset=".6" stop-color="#bed9ff"/><stop offset="1" stop-color="#ded6fc"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-30%" width="150%" height="170%"><feDropShadow dx="0" dy="20" stdDeviation="26" flood-color="#171d4a" flood-opacity=".13"/></filter>
+  <filter id="cardShadow" x="-30%" y="-40%" width="160%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#243271" flood-opacity=".08"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#background)"/>
+<rect x="90" y="70" width="54" height="54" rx="13" fill="url(#brand)"/><text x="117" y="109" text-anchor="middle" font-size="31" font-weight="800" font-family="Arial,sans-serif" fill="#fff">B!</text>
+<text x="170" y="108" font-family="Arial,sans-serif" fill="#11162a" font-size="22" font-weight="700">BILLOW / PUBLIC</text>
+<text x="1350" y="108" font-family="Arial,sans-serif" font-size="21" font-weight="600" fill="#69748e">REPOSITORY</text>
+<path d="M90 154H1510" stroke="#dce1ef" stroke-width="2"/>
+<text x="85" y="455" font-family="Arial,Helvetica,sans-serif" font-size="174" font-weight="800" letter-spacing="-10" fill="#101426">Billow</text>
+<text x="664" y="455" font-family="Arial,Helvetica,sans-serif" font-size="174" font-weight="800" fill="#4057f8">!</text>
+<text x="92" y="526" font-family="Arial,sans-serif" font-size="43" font-weight="600" fill="#15192c">A platform to make things.</text>
+<text x="92" y="586" font-family="Arial,sans-serif" font-size="26" fill="#6d7891">Explore the docs, examples,</text>
+<text x="92" y="625" font-family="Arial,sans-serif" font-size="26" fill="#6d7891">compatibility guides and creative tools.</text>
+<rect x="91" y="679" width="127" height="57" rx="16" fill="#fff" stroke="#e0e5f3"/><text x="117" y="714" font-size="21" font-family="Arial,sans-serif" fill="#3656fa" font-weight="700">Docs ↗</text>
+<rect x="230" y="679" width="164" height="57" rx="16" fill="#fff" stroke="#e0e5f3"/><text x="253" y="714" font-size="21" font-family="Arial,sans-serif" fill="#151a2e" font-weight="600">Examples ↗</text>
+<rect x="406" y="679" width="187" height="57" rx="16" fill="#fff" stroke="#e0e5f3"/><text x="427" y="714" font-size="20" font-family="Arial,sans-serif" fill="#151a2e" font-weight="600">Compatibility</text>
+<rect x="604" y="679" width="122" height="57" rx="16" fill="#fff" stroke="#e0e5f3"/><text x="625" y="714" font-size="21" font-family="Arial,sans-serif" fill="#151a2e" font-weight="600">Tools ↗</text>
+<!-- Decorative app surfaces suggest possibilities, not screenshots of a specific live build. -->
+<rect x="817" y="271" width="394" height="428" rx="28" fill="#151b30" filter="url(#cardShadow)" transform="rotate(-5 1014 485)"/>
+<rect x="840" y="294" width="348" height="385" rx="14" fill="#252e46" transform="rotate(-5 1014 485)"/>
+<circle cx="860" cy="322" r="6" fill="#ff7773"/><circle cx="878" cy="322" r="6" fill="#ffc45b"/><circle cx="896" cy="322" r="6" fill="#68d398"/>
+<g fill="#7b87a6"><rect x="869" y="378" width="102" height="8" rx="4"/><rect x="869" y="401" width="158" height="8" rx="4"/><rect x="869" y="424" width="117" height="8" rx="4"/><rect x="869" y="464" width="170" height="8" rx="4"/><rect x="869" y="488" width="130" height="8" rx="4"/></g>
+<rect x="920" y="203" width="600" height="497" rx="26" fill="#fff" stroke="#dfe4f3" stroke-width="2" filter="url(#shadow)"/>
+<rect x="920" y="203" width="600" height="48" rx="26" fill="#f8f9ff"/>
+<path d="M920 230H1520" stroke="#eef0f7" stroke-width="2"/>
+<circle cx="951" cy="227" r="7" fill="#ff7974"/><circle cx="974" cy="227" r="7" fill="#ffc14c"/><circle cx="997" cy="227" r="7" fill="#70d29b"/>
+<text x="944" y="290" font-size="30" font-family="Arial,sans-serif" fill="#172044" font-weight="800">Billow!</text>
+<rect x="937" y="313" width="136" height="44" rx="12" fill="#e8edff"/><text x="952" y="342" font-size="18" font-family="Arial,sans-serif" fill="#3f5cf3" font-weight="700">Home</text>
+<text x="954" y="397" font-size="17" font-family="Arial,sans-serif" fill="#77819a">Apps</text>
+<text x="954" y="447" font-size="17" font-family="Arial,sans-serif" fill="#77819a">Sites</text>
+<text x="954" y="497" font-size="17" font-family="Arial,sans-serif" fill="#77819a">Studio</text>
+<text x="954" y="547" font-size="17" font-family="Arial,sans-serif" fill="#77819a">Docs</text>
+<rect x="1094" y="278" width="402" height="248" rx="22" fill="url(#hero)"/>
+<text x="1125" y="334" font-family="Arial,sans-serif" font-size="34" font-weight="800" fill="#182452">Create.</text>
+<text x="1125" y="377" font-family="Arial,sans-serif" font-size="34" font-weight="800" fill="#182452">Explore.</text>
+<text x="1125" y="420" font-family="Arial,sans-serif" font-size="34" font-weight="800" fill="#182452">Build together.</text>
+<rect x="1366" y="328" width="92" height="117" rx="24" fill="#fff" fill-opacity=".34" stroke="#fff" stroke-opacity=".85" stroke-width="3" transform="rotate(14 1412 386)"/>
+<rect x="1328" y="371" width="100" height="106" rx="22" fill="#759fff" fill-opacity=".26" stroke="#fff" stroke-opacity=".68" stroke-width="3" transform="rotate(-10 1378 424)"/>
+<text x="1100" y="565" font-size="18" font-family="Arial,sans-serif" font-weight="700" fill="#222948">FEATURED</text>
+<g>
+<rect x="1096" y="584" width="119" height="94" rx="17" fill="#f4f6ff"/>
+<rect x="1223" y="584" width="119" height="94" rx="17" fill="#f4f6ff"/>
+<rect x="1350" y="584" width="128" height="94" rx="17" fill="#f4f6ff"/>
+<rect x="1138" y="596" width="35" height="31" rx="9" fill="#67afff"/><rect x="1152" y="609" width="26" height="27" rx="8" fill="#3c6fff" fill-opacity=".65"/>
+<path d="M1275 600l22 13v26l-22 13-22-13v-26z" stroke="#9b62ff" fill="#e3d5ff" stroke-width="3"/>
+<circle cx="1414" cy="624" r="18" fill="none" stroke="#41ba75" stroke-width="4"/><path d="M1396 624h36M1414 606c-13 13-13 23 0 36M1414 606c13 13 13 23 0 36" stroke="#41ba75" stroke-width="2" fill="none"/>
+<text x="1156" y="660" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" fill="#232c4e" font-weight="700">Apps</text>
+<text x="1282" y="660" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" fill="#232c4e" font-weight="700">Create</text>
+<text x="1414" y="660" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" fill="#232c4e" font-weight="700">Sites</text>
+</g>
+<path d="M90 795H1510" stroke="#dce1ef" stroke-width="2"/>
+<text x="94" y="833" font-family="Arial,sans-serif" font-size="18" fill="#19213c">DOCS　 /　 EXAMPLES　 /　 COMPATIBILITY　 /　 TOOLS</text>
+<text x="1383" y="833" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#425bfa">BILLOWOS</text>
+<rect x="90" y="857" width="1420" height="6" rx="3" fill="#4259fa"/>
+</svg>

@@ -1,20 +1,38 @@
-# Application APIs
+# Applications in Billow
 
-Billow applications use Billow-native modules rather than direct Roblox engine access. These are capability-backed facades: an API being present does not automatically grant permission.
+An application is a thing you can launch, use and close—just like the apps you're used to. In Billow, it can also be something **you build**.
 
-| Module | Purpose |
-|---|---|
-| `@billow/app` | identity, activation, lifecycle/events |
-| `@billow/windows` | owned window/surface operations |
-| `@billow/files` | opaque file-handle operations |
-| `@billow/storage` | application-scoped persistent state |
-| `@billow/ipc` | capability-mediated local service messaging |
-| `@billow/notifications` | notifications |
-| `@billow/clipboard` | permission-scoped clipboard operations |
-| `@billow/logging` | application logging |
+The accepted Creator workflow supports **TypeScript first**, with **JavaScript and Luau** as alternatives. Billo Loom provides an in-platform creator workbench. Public authoring/tool availability can differ from the internally tested implementation.
 
-A file/window/IPC handle is an opaque Billow reference issued inside an authorized context. It cannot be usefully forged by guessing an ID and is not a raw Roblox object.
+[**New to making apps? Start here →**](../getting-started/BUILD_AN_APP.md)
 
-TypeScript is the default application authoring direction, with JavaScript and Luau alternatives. TS/JS end-to-end production integration is still marked **experimental** until the current standards cutover is certified.
+## Meet the Billow APIs
 
-Public code should depend on these module contracts, not private kernel/service hierarchy.
+Billow applications use controlled platform APIs rather than reaching into Roblox's engine directly.
+
+| API | What it's for |
+| --- | --- |
+| `@billow/app` | App identity, launch information and lifecycle |
+| `@billow/windows` | Windows owned by your app |
+| `@billow/files` | Access to files you're allowed to use |
+| `@billow/storage` | Your app's stored data/settings |
+| `@billow/ipc` | Communication with permitted services |
+| `@billow/notifications` | Notifications where granted |
+| `@billow/clipboard` | Permission-scoped clipboard use |
+| `@billow/logging` | Application diagnostics |
+
+### An important rule
+
+Having an API available is not the same as having **permission**. Billow grants capabilities for specific operations and resources. A guessed file ID or process number isn't permission; neither is an app manifest that simply requests broad access.
+
+An app's window is not the same thing as its process or package. Those are distinct parts of the platform so apps can be managed safely and predictably.
+
+The [compatibility index](../compatibility/FEATURES.md) is the public reference for individual language and API support claims.
+
+## What isn't this?
+
+It's **not** an npm package catalog, Node.js runtime, direct Roblox plugin API, or permission to run arbitrary Luau code inside other users' sessions. Public SDK/packaging commands will be documented when they are actually available.
+
+[Platform overview →](../architecture/SYSTEM_OVERVIEW.md) · [Beginner guide →](../getting-started/BUILD_AN_APP.md)
+
+[← All documentation](../README.md)

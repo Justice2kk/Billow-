@@ -1,14 +1,34 @@
-# Contributing to the public developer surface
+# Help make Billow easier to understand
 
-This repository is contract/documentation work, not a place to mirror private Billow implementation files.
+You don't need to be a kernel engineer to improve these public docs. A clearer example, a confusing explanation fixed, or a broken link repaired can make the next creator's day much easier.
 
-Before opening a change:
+## Good contributions
 
-1. update `compatibility/registry.json` first when a compatibility claim changes;
-2. attach a verification identifier to supported/limited/experimental/Billow-native claims;
-3. do not strengthen a status because a feature merely resembles HTML/CSS/JavaScript;
-4. keep Billow-native behavior visibly separate from standards compatibility;
-5. do not copy private repository paths, service snapshots, secrets or implementation-only hierarchy into public docs;
-6. run `python tools/validate_public.py --write` when the registry changes, then `python tools/validate_public.py --check`.
+- Explain a confusing concept in ordinary language.
+- Make a beginner example easier to follow without adding unsupported features.
+- Repair broken links, typos and unclear navigation.
+- Report missing context or an incorrect support claim.
+- Suggest documentation for a real, confirmed public capability.
 
-Documentation should answer a developer question or define a contract. Avoid duplicate overview files, generic contributor boilerplate and unverified roadmap promises.
+Before sending a pull request, explain **who the change helps and why**. A little context beats a wall of jargon.
+
+## If you're changing a compatibility claim
+
+Billow's compatibility pages aren't hand-maintained checklists.
+
+1. Update [`compatibility/registry.json`](compatibility/registry.json), including the corresponding evidence reference.
+2. Run `python tools/validate_public.py --write` to regenerate the feature page.
+3. Run `python tools/validate_public.py --check`.
+4. Keep limitations explicit. A familiar API name does not prove full standard behavior.
+
+[Feature index](docs/compatibility/FEATURES.md) · [Documentation hub](docs/README.md)
+
+## Boundaries worth respecting
+
+This is the **public documentation and examples repository**. Don't paste private implementation files, security-sensitive details, hidden service paths, credentials or unreleased internal procedures here.
+
+Please don't claim that Billow implements all of HTML, CSS, JavaScript or Roblox's engine APIs. Tie support claims to observable behavior and public compatibility evidence.
+
+The [license status](LICENSE) is currently limited; public visibility is not a blanket license grant for Billow's private code.
+
+Thanks for helping make a creative platform feel approachable.

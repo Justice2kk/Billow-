@@ -1,39 +1,85 @@
-# BillowOS developer platform
+<p align="center">
+  <img src="assets/billow-public-banner.svg" width="100%" alt="Billow! Public repository — an illustrated look at a creative environment for apps, sites and developer tools." />
+</p>
 
-BillowOS is a hosted, capability-secured application and web environment implemented inside Roblox. Roblox remains the real host runtime; Billow provides its own application, file, package, window and `billow://` abstractions above it.
+# Billow! — a platform to make things.
 
-This repository is the **public developer surface**, not the private BillowOS implementation repository. It exists so a developer can understand what they can build, which familiar web/programming concepts transfer, where Billow deliberately differs, and which capabilities are stable enough to rely on.
+**An operating environment and creator platform built inside Roblox.** Open apps, explore sites, work with files—and, when you feel like making something yourself, build on the same platform.
 
-## Current public direction
+This is **Billow's public home for creators**: approachable guides, working source examples, API introductions and honest notes about what the platform supports. You don't need to understand operating-system internals to start here.
 
-- **Applications:** TypeScript is the default authoring direction; JavaScript and Luau are supported alternatives.
-- **Web:** HTML and CSS are the canonical markup/style direction. JavaScript/TypeScript page behavior is being integrated through Billow's capability-mediated page runtime.
-- **Legacy authoring:** JML, JSS and `.bts` are migration/history vocabulary, not the recommended format for new work.
-- **Security boundary:** public code does not receive arbitrary Roblox Instances/services, DataStore access, raw remotes, arbitrary Luau execution, or unrestricted external networking.
+[**Start exploring →**](docs/getting-started/OVERVIEW.md) · [See an example](examples/web/basic/) · [Find a feature](docs/compatibility/FEATURES.md) · [Questions?](docs/getting-started/FAQ.md)
 
-The standards-language cutover is still being integrated end to end. Documentation therefore distinguishes **supported**, **limited**, **experimental**, **unsupported**, **intentionally unsupported**, and **Billow-native** features instead of claiming browser compatibility that has not been proven.
+---
 
-## Start here
+## What do you want to make?
 
-1. [Getting started](docs/getting-started/OVERVIEW.md)
-2. [Platform terminology](docs/getting-started/TERMINOLOGY.md)
-3. [Web platform](docs/web/README.md)
-4. [Application APIs](docs/applications/README.md)
-5. [Compatibility index](docs/compatibility/FEATURES.md)
-6. [System overview](docs/architecture/SYSTEM_OVERVIEW.md)
+| I want to… | Start here |
+| --- | --- |
+| **Make a website** | [Build your first Billow page](docs/getting-started/BUILD_A_SITE.md) — familiar HTML and CSS, with Billow-specific limits explained. |
+| **Build an app** | [Meet the application platform](docs/getting-started/BUILD_AN_APP.md) — TypeScript-first authoring and Billow APIs. |
+| **See what works** | [Explore the compatibility guide](docs/compatibility/README.md) — search for a familiar HTML, CSS or programming concept. |
+| **Understand BillowOS** | [The quick tour](docs/getting-started/OVERVIEW.md) — no kernel vocabulary required. |
 
-If you already know HTML/CSS/web development, the compatibility index is the fastest route from a familiar term such as **flexbox**, **margin**, **DOM**, **event listener**, **image**, or **fetch** to the Billow equivalent and its current support level.
+### A little preview
 
-## Public/private boundary
+A Billow site starts with recognizable web files, not a secret new syntax:
 
-This repository documents public contracts, examples, compatibility information and Billow-native developer APIs. It intentionally does not publish private kernel/runtime/security/persistence implementation source merely because those systems are described conceptually.
-
-Public compatibility claims are validated from `compatibility/registry.json`. Generated compatibility pages and public-boundary checks run in CI:
-
-```text
-python tools/validate_public.py --check
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My little corner</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Hey, Billow!</h1>
+      <p>Made by me. Ready to grow.</p>
+    </main>
+  </body>
+</html>
 ```
 
-## License status
+[See the complete HTML + CSS example →](examples/web/basic/)  
+[Learn what happens next →](docs/getting-started/BUILD_A_SITE.md)
 
-Formal license terms for this public developer surface have not yet been published. Repository visibility should not be interpreted as an open-source license for the private BillowOS implementation.
+*Billow supports a defined HTML/CSS profile, not every feature found in Chrome, Safari or Firefox.*
+
+## What lives inside Billow?
+
+**Everyday things:** a desktop, windows, Files, a Browser, a Store and familiar navigation.  
+**Creative things:** Sites for web projects, a Creator workflow, and **Billo Loom** for making applications.  
+**Underneath:** a permission-aware platform for apps, files, packages and Billow's own `billow://` web.
+
+It's one environment. You don't have to enter a special “developer mode” to be curious.
+
+## Where the project stands
+
+BillowOS is under active development. The core project's **internal testing** has accepted the TypeScript / JavaScript / Luau Creator path and an HTML/CSS Sites → Browser journey. That is **not** a claim that a public Roblox release is available or that every feature is stable.
+
+| Area | The practical answer |
+| --- | --- |
+| **Web pages** | Standard HTML/CSS concepts, within [Billow's documented profile](docs/web/README.md). |
+| **Applications** | TypeScript is the default creator language; JavaScript and Luau are alternatives. Consult [application docs](docs/applications/README.md). |
+| **Page scripting** | JavaScript/TypeScript integration is still feature-gated; don't assume an ordinary browser's full APIs. |
+| **Older JML/JSS projects** | Legacy compatibility exists; **new work starts with HTML/CSS**. |
+| **Compatibility** | Consult the [feature index](docs/compatibility/FEATURES.md) for exact support and limits. |
+
+### A few things to know
+
+- **Billow runs inside Roblox.** It isn't an OS you install on your laptop or a standalone web browser.
+- **Familiar doesn't mean identical.** HTML/CSS concepts transfer, but Billow uses controlled rendering, APIs and permissions.
+- **This is a public documentation repository**, not the private OS engine or a downloadable standalone runtime.
+- **Public doesn't automatically mean open source.** [License information](LICENSE) is currently limited; don't assume permission to reuse the private implementation.
+
+## The bookshelf
+
+[**Documentation**](docs/README.md) · [**Website development**](docs/web/README.md) · [**App APIs**](docs/applications/README.md) · [**Files and resources**](docs/filesystem/README.md) · [**Compatibility**](docs/compatibility/FEATURES.md) · [**Platform concepts**](docs/architecture/SYSTEM_OVERVIEW.md) · [**Terminology**](docs/getting-started/TERMINOLOGY.md)
+
+Want to help with the public guides? [Read the contribution guide](CONTRIBUTING.md).  
+Want to see what's next? [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md).
+
+---
+
+<p align="center"><strong>Made by you. Owned by you.</strong><br/><sub>Built to be built on.</sub></p>

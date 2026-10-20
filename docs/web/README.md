@@ -1,14 +1,40 @@
-# Billow web platform
+# Build for the Billow web
 
-Billow web development uses familiar concepts where they fit honestly:
+If you've made a website before, much of this will feel familiar.
 
-- [HTML](HTML.md) for document structure/semantics;
-- [CSS](CSS.md) for a bounded cascade/layout/style model;
-- JavaScript/TypeScript page behavior through a capability-mediated page API;
-- `billow://` for logical routing and origin identity.
+**HTML** describes the page. **CSS** styles it. **Billow's Browser** displays it inside Roblox.
 
-The Browser does not expose a normal browser DOM backed by arbitrary engine objects. Page code receives controlled element/document operations, origin-scoped storage, bounded same-origin requests and navigation. APIs resembling `getElementById`, class manipulation, event listeners, storage, `fetch` and `location` exist as Billow facades, but production JS/TS page integration remains **experimental** during the standards cutover.
+The difference is that Billow deliberately supports **a smaller, safer web profile**, plus its own `billow://` addresses and permission model.
 
-Deliberate boundaries include no `innerHTML`-style raw-markup sink, no arbitrary cross-origin/external HTTP for untrusted pages, no iframe-like arbitrary browsing context, and no raw Roblox Instances/services/remotes.
+## Start with a page, not a specification
 
-Use the [compatibility index](../compatibility/FEATURES.md) to search by familiar terms.
+[**Try the beginner walkthrough →**](../getting-started/BUILD_A_SITE.md)  
+[**Open the source example →**](../../examples/web/basic/)
+
+## What you can work with
+
+| Concept | Where to learn more |
+| --- | --- |
+| HTML content, links, buttons and images | [HTML profile](HTML.md) |
+| CSS colors, typography, flex, spacing and responsive rules | [CSS profile](CSS.md) |
+| JS/TS page behavior | [Feature-specific experimental coverage](../compatibility/FEATURES.md) |
+| Billow addresses, navigation and routes | [`billow://` guide](../reference/URI_SCHEMES.md) |
+| Exact supported vs. limited features | [Compatibility index](../compatibility/FEATURES.md) |
+
+### Familiar isn't identical
+
+A few intentional distinctions:
+
+- No unrestricted access to Roblox Instances, services, remotes or DataStore.
+- No arbitrary external networking from an untrusted page.
+- No `innerHTML`-style dynamic raw-markup injection in the public page contract.
+- No assumption that every browser DOM/CSS/JS feature works.
+- Published sites are validated separately from their editable source.
+
+**The important idea:** You can bring your HTML/CSS knowledge. Let the [compatibility guide](../compatibility/FEATURES.md) tell you exactly where Billow differs.
+
+## What about JML and JSS?
+
+Those are **legacy formats**. Existing historical content may still be readable, but new public authoring starts with **HTML and CSS**. See [JML](JML.md) and [JSS](JSS.md) only if you are dealing with an older project.
+
+[← All documentation](../README.md)

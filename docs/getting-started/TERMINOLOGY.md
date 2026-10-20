@@ -1,16 +1,26 @@
-# Terminology
+# Billow words, in plain English
 
-| Term | Meaning |
-|---|---|
-| **BillowOS** | Hosted application/web environment implemented inside Roblox. |
-| **host** | Roblox and the underlying device/runtime. Public Billow code does not own this layer. |
-| **capability** | Authority to perform a bounded operation on an allowed resource/service. Declaring an API does not self-grant authority. |
-| **handle** | Opaque reference to an already-authorized object such as a file or window; not a raw Roblox Instance. |
-| **application** | Installed Billow package/registration; it can exist without running. |
-| **application instance** | One logical activation of an application. |
-| **process** | Billow logical execution/security/accounting container, not a native OS process. |
-| **page program** | Sandboxed behavior associated with a Billow web document. |
-| **origin** | Web security identity used by Billow page/network/storage policy. |
-| **deployment** | Immutable published web output selected by a route pointer. |
-| **Billow-native** | Feature designed specifically for Billow rather than claimed standards equivalence. |
-| **legacy authoring format** | JML/JSS/`.bts` vocabulary retained for migration/history; new direction is HTML/CSS/`.ts`. |
+You don't need to memorize these. This page is here for the moments when a term gets in your way.
+
+| Word | Think of it as… |
+| --- | --- |
+| **BillowOS** | The creative computing environment running inside Roblox. |
+| **Host** | Roblox itself—the platform Billow runs on. |
+| **Application / app** | A program you can use in Billow, like Files or Browser. |
+| **App instance** | One running session of an app. |
+| **Window** | A visible surface an app uses on the desktop. |
+| **Package** | A versioned way to distribute an app and its resources. |
+| **Files / VFS** | Billow's own system for organizing user files and resources, not your computer's local disk. |
+| **Capability** | A specific permission granted to a program, such as access to an allowed file. |
+| **Handle** | A safe reference to an authorized thing (like a file or window), not a raw Roblox object. |
+| **Process** | Billow's logical execution/lifecycle unit, not a Windows or Linux process. |
+| **Sites** | Billow's website project tool. |
+| **Deployment** | A published, versioned result of a website project. |
+| **Origin** | The website identity used for Billow web permissions and storage. |
+| **`billow://`** | A Billow web address, not an ordinary Internet address. |
+| **Billow-native** | Something designed specifically for Billow, without claiming an exact outside equivalent. |
+| **Legacy JML/JSS** | Older web authoring formats kept for compatibility, not the recommended start for new work. |
+
+Looking for the technical meanings? The [full glossary](../reference/GLOSSARY.md) and [system overview](../architecture/SYSTEM_OVERVIEW.md) go deeper.
+
+[← Back to getting started](OVERVIEW.md)

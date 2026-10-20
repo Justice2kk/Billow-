@@ -1,28 +1,43 @@
-# Getting started
+# Welcome to Billow!
 
-## Mental model
+**BillowOS is a creative computing environment inside Roblox.** Think of a familiar desktop with files, apps and windows, plus the ability to make and share things using Billow's tools.
 
-BillowOS is not a replacement for the device operating system and it does not pretend to provide real TCP sockets, native processes or direct Roblox engine access to public programs. It is an application platform running **inside Roblox** with a controlled OS-like model: applications, windows, files, packages, capabilities and a logical `billow://` web platform.
+You can explore without writing code. You can create when you're ready. Both happen in the same place.
 
-## If you know web development
+## The two-minute tour
 
-Start with ordinary HTML and CSS concepts:
+**The desktop** is where you open and organize things: apps, files, settings and the Browser.
 
-```text
-HTML concept  → Billow HTML profile → controlled document model
-CSS concept   → Billow CSS profile  → controlled layout/style model
-page behavior → JS/TS page runtime  → capability-mediated APIs
-URL concept   → billow://            → Billow route/deployment resolution
-```
+**The Browser** opens sites on the Billow web. A `billow://` address belongs to Billow's own routing system, not the public Internet.
 
-Billow is a deterministic subset. Current HTML supports common structural/text/link/image/form elements but not every browser tree-construction case. CSS supports a useful flex/layout/typography subset but not arbitrary browser CSS. Check the [compatibility index](../compatibility/FEATURES.md) before assuming a browser feature exists.
+**Sites** is where you work on website projects. The modern authoring path uses HTML and CSS.
 
-## Application languages
+**Creator and Billo Loom** are for applications. TypeScript is the default creator language, with JavaScript and Luau also supported in the internal Creator path.
 
-- TypeScript (`.ts`) — default direction, currently **experimental while production cutover finishes**;
-- JavaScript (`.js`) — standards source under the same integration gate;
-- Luau (`.lua` / `.luau`) — supported within Billow application authority boundaries.
+**The Store** is the home for application discovery and distribution within the platform.
 
-Billow-native APIs such as `@billow/app`, `@billow/files`, `@billow/storage` and `@billow/ipc` expose bounded operations backed by capabilities, not raw Roblox services.
+You don't have to learn what a kernel, process or capability is to use any of this.
 
-The [basic web example](../../examples/web/basic/README.md) is deliberately a source/conformance example. It does not invent a new site packaging manifest while that production contract is still being cut over.
+## Choose your first stop
+
+| Your curiosity | Your next page |
+| --- | --- |
+| “I want to try making a page.” | [Build a website](BUILD_A_SITE.md) |
+| “I want to create an app.” | [Build an application](BUILD_AN_APP.md) |
+| “I know CSS. Will flexbox work?” | [Check compatibility](../compatibility/FEATURES.md) |
+| “Wait, is this actual Windows?” | [Frequently asked questions](FAQ.md) |
+| “Explain what's happening underneath.” | [Platform overview](../architecture/SYSTEM_OVERVIEW.md) |
+
+## What makes Billow different?
+
+Billow isn't trying to mimic every part of a conventional computer. Roblox handles the real engine and hardware. Billow adds its own controlled model for apps, files, windows, permissions and websites.
+
+That means familiar concepts often carry over **without every feature being identical**. For example, HTML and CSS are useful here, but Billow supports a [specific documented subset](../web/README.md), and a page cannot simply access Roblox services.
+
+### What can I use today?
+
+The core project has verified internal creator and static site workflows. The public Roblox release, documentation and individual runtime features can be at different stages. We flag limited and experimental behavior rather than quietly promising universal support.
+
+[**Try the HTML/CSS example →**](../../examples/web/basic/) · [**See the FAQ →**](FAQ.md)
+
+[← Back to documentation](../README.md)
