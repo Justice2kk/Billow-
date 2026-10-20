@@ -8,7 +8,7 @@
 
 This is **Billow's public home for creators**: approachable guides, working source examples, API introductions and honest notes about what the platform supports. You don't need to understand operating-system internals to start here.
 
-[**Start exploring →**](docs/getting-started/OVERVIEW.md) · [See an example](examples/web/basic/) · [Find a feature](docs/compatibility/FEATURES.md) · [Questions?](docs/getting-started/FAQ.md)
+[**Start exploring →**](docs/getting-started/OVERVIEW.md) · [See an example](examples/web/basic/) · [What works?](docs/compatibility/CHECKLIST.md) · [Questions?](docs/getting-started/FAQ.md)
 
 ---
 
@@ -18,7 +18,7 @@ This is **Billow's public home for creators**: approachable guides, working sour
 | --- | --- |
 | **Make a website** | [Build your first Billow page](docs/getting-started/BUILD_A_SITE.md) — familiar HTML and CSS, with Billow-specific limits explained. |
 | **Build an app** | [Meet the application platform](docs/getting-started/BUILD_AN_APP.md) — TypeScript-first authoring and Billow APIs. |
-| **See what works** | [Explore the compatibility guide](docs/compatibility/README.md) — search for a familiar HTML, CSS or programming concept. |
+| **See what works** | [Scan the compatibility checklist](docs/compatibility/CHECKLIST.md) — quick answers about HTML, CSS, scripting and apps. |
 | **Understand BillowOS** | [The quick tour](docs/getting-started/OVERVIEW.md) — no kernel vocabulary required. |
 
 ### A little preview
@@ -75,7 +75,7 @@ BillowOS is under active development. The core project's **internal testing** ha
 
 ## The bookshelf
 
-[**Documentation**](docs/README.md) · [**Website development**](docs/web/README.md) · [**App APIs**](docs/applications/README.md) · [**Files and resources**](docs/filesystem/README.md) · [**Compatibility**](docs/compatibility/FEATURES.md) · [**Platform concepts**](docs/architecture/SYSTEM_OVERVIEW.md) · [**Terminology**](docs/getting-started/TERMINOLOGY.md)
+[**Documentation**](docs/README.md) · [**Website development**](docs/web/README.md) · [**App APIs**](docs/applications/README.md) · [**Files and resources**](docs/filesystem/README.md) · [**Compatibility checklist**](docs/compatibility/CHECKLIST.md) · [Full feature index](docs/compatibility/FEATURES.md) · [**Platform concepts**](docs/architecture/SYSTEM_OVERVIEW.md) · [**Terminology**](docs/getting-started/TERMINOLOGY.md)
 
 Want to help with the public guides? [Read the contribution guide](CONTRIBUTING.md).  
 Want to see what's next? [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md).

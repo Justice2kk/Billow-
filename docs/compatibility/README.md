@@ -1,9 +1,20 @@
-# Compatibility model
+# Compatibility, made simple
 
-`compatibility/registry.json` is the authoritative public compatibility registry. [FEATURES.md](FEATURES.md) is generated from it.
+**Just want to know what works?** [Open the checkbox checklist →](CHECKLIST.md). It's written for humans, organized by what you're trying to build.
 
-Statuses intentionally distinguish `supported`, `supported_with_limits`, `experimental`, `unsupported`, `intentionally_unsupported`, `billow_extension`, `deprecated` and `planned`.
+**Want the full technical answer?** [Open the complete compatibility index →](FEATURES.md). You can look up exact HTML elements, CSS properties, APIs, support levels and verification references.
 
-Supported/limited/experimental/Billow-extension entries require a verification identifier. Some map to conformance tests; others map to implementation contracts where a dedicated public test does not yet exist. This prevents generated documentation from silently claiming support with no evidence owner.
+### Quick legend
 
-External resources are centralized in the registry. They teach transferable concepts; Billow docs still define the supported subset and differences.
+| Symbol | Meaning |
+| --- | --- |
+| ☑️ | Works within Billow's documented limits |
+| 🧪 | Experimental; details or availability may change |
+| ☐ | Not available in the current profile |
+| 🚫 | Intentionally excluded |
+| 💠 | Billow-native |
+| ↩️ | Older/deprecated authoring format |
+
+**Which reference is authoritative?** The [machine-readable feature registry](../../compatibility/registry.json). The [full index](FEATURES.md) is generated from it. The [short checklist](CHECKLIST.md) is a curated introduction; it does not replace the precise feature definitions.
+
+[← Documentation home](../README.md)

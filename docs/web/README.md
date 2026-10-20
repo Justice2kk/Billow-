@@ -9,6 +9,7 @@ The difference is that Billow deliberately supports **a smaller, safer web profi
 ## Start with a page, not a specification
 
 [**Try the beginner walkthrough →**](../getting-started/BUILD_A_SITE.md)  
+[**Quick compatibility checklist →**](../compatibility/CHECKLIST.md)  
 [**Open the source example →**](../../examples/web/basic/)
 
 ## What you can work with

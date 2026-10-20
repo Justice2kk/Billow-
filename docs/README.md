@@ -13,6 +13,7 @@ You don't need to read these docs in order. Pick a question and jump in.
 - [**A website**](getting-started/BUILD_A_SITE.md) — HTML/CSS basics, example and current limits.
 - [**An application**](getting-started/BUILD_AN_APP.md) — creator languages and the Billow app model.
 - [**See a real example**](../examples/web/basic/) — small readable HTML/CSS files.
+- [**What works?**](compatibility/CHECKLIST.md) — an easy-to-scan checklist.
 
 ## I want the specifics
 
@@ -20,7 +21,7 @@ You don't need to read these docs in order. Pick a question and jump in.
 - [Billow application APIs](applications/README.md)
 - [File and resource model](filesystem/README.md)
 - [`billow://` addresses](reference/URI_SCHEMES.md)
-- [Compatibility by feature](compatibility/FEATURES.md)
+- [Quick compatibility checklist](compatibility/CHECKLIST.md) · [Full feature index](compatibility/FEATURES.md)
 - [How the platform fits together](architecture/SYSTEM_OVERVIEW.md)
 - [Full glossary](reference/GLOSSARY.md)
 

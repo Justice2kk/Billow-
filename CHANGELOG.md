@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-20 — clearer compatibility
+
+- added a checkbox-style compatibility overview with simple supported/experimental/unsupported indicators;
+- linked it from the public homepage, documentation, web guide and first-time tour;
+- kept the full generated index and source registry unchanged.
+
+
 ## 2026-10-20 — a friendlier front door
 
 - redesigned the public README around what visitors actually want to make;

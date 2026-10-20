@@ -24,7 +24,7 @@ You don't have to learn what a kernel, process or capability is to use any of th
 | --- | --- |
 | “I want to try making a page.” | [Build a website](BUILD_A_SITE.md) |
 | “I want to create an app.” | [Build an application](BUILD_AN_APP.md) |
-| “I know CSS. Will flexbox work?” | [Check compatibility](../compatibility/FEATURES.md) |
+| “I know CSS. Will flexbox work?” | [Quick compatibility checklist](../compatibility/CHECKLIST.md) |
 | “Wait, is this actual Windows?” | [Frequently asked questions](FAQ.md) |
 | “Explain what's happening underneath.” | [Platform overview](../architecture/SYSTEM_OVERVIEW.md) |
 
