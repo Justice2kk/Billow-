@@ -1,10 +1,10 @@
-# Build for the Billow web
+# Build for the Cielori web
 
 If you've made a website before, much of this will feel familiar.
 
-**HTML** describes the page. **CSS** styles it. **Billow's Browser** displays it inside Roblox.
+**HTML** describes the page. **CSS** styles it. **Cielori's Browser** displays it inside Roblox.
 
-The difference is that Billow deliberately supports **a smaller, safer web profile**, plus its own `billow://` addresses and permission model.
+The difference is that Cielori deliberately supports **a smaller, safer web profile**, plus its own `billow://` addresses and permission model.
 
 ## Start with a page, not a specification
 
@@ -19,7 +19,7 @@ The difference is that Billow deliberately supports **a smaller, safer web profi
 | HTML content, links, buttons and images | [HTML profile](HTML.md) |
 | CSS colors, typography, flex, spacing and responsive rules | [CSS profile](CSS.md) |
 | JS/TS page behavior | [Feature-specific experimental coverage](../compatibility/FEATURES.md) |
-| Billow addresses, navigation and routes | [`billow://` guide](../reference/URI_SCHEMES.md) |
+| Cielori addresses, navigation and routes | [`billow://` guide](../reference/URI_SCHEMES.md) |
 | Exact supported vs. limited features | [Compatibility index](../compatibility/FEATURES.md) |
 
 ### Familiar isn't identical
@@ -32,7 +32,7 @@ A few intentional distinctions:
 - No assumption that every browser DOM/CSS/JS feature works.
 - Published sites are validated separately from their editable source.
 
-**The important idea:** You can bring your HTML/CSS knowledge. Let the [compatibility guide](../compatibility/FEATURES.md) tell you exactly where Billow differs.
+**The important idea:** You can bring your HTML/CSS knowledge. Let the [compatibility guide](../compatibility/FEATURES.md) tell you exactly where Cielori differs.
 
 ## What about JML and JSS?
 

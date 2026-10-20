@@ -1,6 +1,6 @@
 # CSS profile
 
-Billow CSS implements a deterministic subset of familiar CSS parsing, cascade, selectors, layout, typography and responsive behavior. Ordinary CSS tutorials are useful for concepts such as flexbox, margin, specificity and media queries; Billow documentation defines which parts transfer.
+Cielori CSS implements a deterministic subset of familiar CSS parsing, cascade, selectors, layout, typography and responsive behavior. Ordinary CSS tutorials are useful for concepts such as flexbox, margin, specificity and media queries; Cielori documentation defines which parts transfer.
 
 The current profile includes common size/position properties, flex layout, margin/padding/gap, typography, colors/backgrounds, opacity/overflow, borders, object fitting and interaction/geometry properties. The [compatibility index](../compatibility/FEATURES.md) lists every property.
 

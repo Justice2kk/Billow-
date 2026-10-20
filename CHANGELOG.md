@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-20 — Cielori rebrand
+
+- renamed public-facing project text, guides and examples from BillowOS/Billow to Cielori;
+- replaced the public README artwork with Cielori-branded art;
+- retained existing technical routing and SDK identifiers where changing them would break compatibility;
+- added a guide documenting the distinction between the new brand and existing technical names.
+
+
 ## 2026-10-20 — clearer compatibility
 
 - added a checkbox-style compatibility overview with simple supported/experimental/unsupported indicators;
