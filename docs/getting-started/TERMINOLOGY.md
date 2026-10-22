@@ -17,7 +17,7 @@ You don't need to memorize these. This page is here for the moments when a term 
 | **Sites** | Nidomo's website project tool. |
 | **Deployment** | A published, versioned result of a website project. |
 | **Origin** | The website identity used for Nidomo web permissions and storage. |
-| **`billow://`** | A Nidomo web address, not an ordinary Internet address. |
+| **`nidomo://`** | A Nidomo web address, not an ordinary Internet address. |
 | **Nidomo-native** | Something designed specifically for Nidomo, without claiming an exact outside equivalent. |
 | **Legacy JML/JSS** | Older web authoring formats kept for compatibility, not the recommended start for new work. |
 

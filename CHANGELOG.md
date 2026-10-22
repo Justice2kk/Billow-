@@ -4,7 +4,8 @@
 
 - Adopted **Nidomo** as the current public platform name across the public-facing docs, examples and compatibility descriptions.
 - Documented **Nimo** as the mascot's current name and kept the project's previous names in the historical migration record.
-- Preserved existing `billow://`, `@billow/*`, `data-billow-*`, compatibility status identifiers and registry-schema fields until a verified runtime migration is available.
+- Adopted the owner-authorized clean break: current `nidomo://`, `@nidomo/*`, `org.nidomo.*`, `data-nidomo-*`, project and workspace identities; former Billow OS persistent data is not migrated.
+- Updated the public compatibility registry, generated index and validator to the Nidomo contracts, while preserving historical project evidence.
 
 ## 2026-10-20 — Cielori rebrand
 

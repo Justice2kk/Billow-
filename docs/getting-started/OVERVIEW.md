@@ -8,7 +8,7 @@ You can explore without writing code. You can create when you're ready. Both hap
 
 **The desktop** is where you open and organize things: apps, files, settings and the Browser.
 
-**The Browser** opens sites on the Nidomo web. A `billow://` address belongs to Nidomo's own routing system, not the public Internet.
+**The Browser** opens sites on the Nidomo web. A `nidomo://` address belongs to Nidomo's own routing system, not the public Internet.
 
 **Sites** is where you work on website projects. The modern authoring path uses HTML and CSS.
 

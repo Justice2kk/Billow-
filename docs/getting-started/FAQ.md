@@ -14,7 +14,7 @@ Not to explore the desktop or use everyday apps. To make a website or applicatio
 
 ### Can I run my existing website unchanged?
 
-Don't assume that. Nidomo doesn't support everything a browser does, and it has its own `billow://` routing, permission and publication rules. Begin with [the web guide](../web/README.md).
+Don't assume that. Nidomo doesn't support everything a browser does, and it has its own `nidomo://` routing, permission and publication rules. Begin with [the web guide](../web/README.md).
 
 ### What about JavaScript and TypeScript?
 
