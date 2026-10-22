@@ -11,7 +11,7 @@ This index answers: **external concept → Nidomo equivalent → current support
 - **`experimental`** — Implemented or under active integration; public shape/availability may change before certification.
 - **`unsupported`** — Not available in the current profile; future support is not committed.
 - **`intentionally_unsupported`** — Deliberately excluded from the Nidomo public model/security boundary.
-- **`billow_extension`** — Nidomo-native capability with no standards-equivalence claim.
+- **`nidomo_extension`** — Nidomo-native capability with no standards-equivalence claim.
 - **`deprecated`** — Legacy/superseded vocabulary retained for migration/history.
 - **`planned`** — Intended direction without a current implementation claim.
 
@@ -21,8 +21,6 @@ Evidence IDs are stable public references to the implementation contract, execut
 
 | Evidence ID | Kind | Source | What it proves |
 |---|---|---|---|
-| `billow-url-contract` | `architecture-contract` | `BillowURL` | Architecture/implementation contract for Nidomo-native URI parsing and routing. |
-| `billow-web-platform-contract` | `architecture-contract` | `WebPlatformContract` | Architecture boundary for hosted web capabilities, including mediated networking and the absence of unrestricted browser embedding semantics. |
 | `creator-build-selftest` | `conformance-test` | `JavaScriptCreatorBuildSelfTest` | Executable creator workflow coverage for TypeScript, JavaScript, and Luau project initialization/build behavior plus TypeScript publish/install/run lifecycle. |
 | `creator-language-hard-cut` | `project-gate` | `CreatorLanguageHardCutMigrationSelfTest` | Locked migration gate that rejects legacy creator-language formats for new authoring while preserving migration/history boundaries. |
 | `creator-standards-cutover` | `project-gate` | `Creator Standards Cutover` | Active production-integration gate for standards-first creator authoring; experimental language claims remain bounded by this gate until certification. |
@@ -32,27 +30,22 @@ Evidence IDs are stable public references to the implementation contract, execut
 | `html-policy-v2` | `implementation-contract` | `HTML.DocumentVersion=2` | Authoritative bounded HTML policy that defines accepted document structure, elements, attributes, and Nidomo form bindings. |
 | `html-syntax-selftest` | `conformance-test` | `HTMLSyntaxSelfTest` | Executable parser conformance coverage for document construction, void elements, attributes, character references, optional closures, and explicit syntax rejection. |
 | `javascript-compiler-selftest` | `conformance-test` | `JavaScriptCompilerSelfTest` | Executable compiler/runtime coverage for TypeScript and JavaScript through the IR2 runtime, including JS semantics and rejection of the legacy source extension. |
+| `nidomo-url-contract` | `architecture-contract` | `NidomoURL` | Architecture/implementation contract for Nidomo-native URI parsing and routing. |
+| `nidomo-web-platform-contract` | `architecture-contract` | `WebPlatformContract` | Architecture boundary for hosted web capabilities, including mediated networking and the absence of unrestricted browser embedding semantics. |
 | `web-standards-selftest` | `conformance-test` | `WebStandardsSelfTest` | Executable integration coverage across the current HTML/CSS profile, including Nidomo form bindings, CSS cascade behavior, scoped URLs, media queries, and explicit unsupported behavior. |
 
 ## application-api
 
 | External / known term | Nidomo | Status | Evidence | Notes |
 |---|---|---|---|---|
-| `—` | `@billow/app` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/app exposes application lifecycle/activation. |
-| `—` | `@billow/clipboard` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/clipboard exposes permission-scoped clipboard. |
-| `—` | `@billow/files` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/files exposes opaque file-handle operations. |
-| `—` | `@billow/ipc` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/ipc exposes capability-mediated IPC. |
-| `—` | `@billow/logging` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/logging exposes application logging. |
-| `—` | `@billow/notifications` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/notifications exposes notifications. |
-| `—` | `@billow/storage` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/storage exposes application-scoped storage. |
-| `—` | `@billow/windows` | `billow_extension` | `dlp7-application-facade-selftest` | @billow/windows exposes window operations. |
-
-## billow
-
-| External / known term | Nidomo | Status | Evidence | Notes |
-|---|---|---|---|---|
-| `form submission` | `data-billow-service + data-billow-action` | `billow_extension` | `html-policy-v2`, `web-standards-selftest` | Forms can bind declaratively to an approved Nidomo service/action. |
-| `URL/URI scheme` | `billow://` | `billow_extension` | `billow-url-contract` | billow:// addresses logical Nidomo routes/deployments. |
+| `—` | `@nidomo/app` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/app exposes application lifecycle/activation. |
+| `—` | `@nidomo/clipboard` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/clipboard exposes permission-scoped clipboard. |
+| `—` | `@nidomo/files` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/files exposes opaque file-handle operations. |
+| `—` | `@nidomo/ipc` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/ipc exposes capability-mediated IPC. |
+| `—` | `@nidomo/logging` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/logging exposes application logging. |
+| `—` | `@nidomo/notifications` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/notifications exposes notifications. |
+| `—` | `@nidomo/storage` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/storage exposes application-scoped storage. |
+| `—` | `@nidomo/windows` | `nidomo_extension` | `dlp7-application-facade-selftest` | @nidomo/windows exposes window operations. |
 
 ## css
 
@@ -162,7 +155,7 @@ Evidence IDs are stable public references to the implementation contract, execut
 | `<h6>` | `<h6>` | `supported_with_limits` | `html-policy-v2` | HTML <h6> is accepted by the current Nidomo document profile. |
 | `<header>` | `<header>` | `supported_with_limits` | `html-policy-v2` | HTML <header> is accepted by the current Nidomo document profile. |
 | `<hr>` | `<hr>` | `supported_with_limits` | `html-policy-v2` | HTML <hr> is accepted by the current Nidomo document profile. |
-| `<iframe>` | `—` | `intentionally_unsupported` | `billow-web-platform-contract` | Iframe-style arbitrary embedding is outside the public Nidomo security model. |
+| `<iframe>` | `—` | `intentionally_unsupported` | `nidomo-web-platform-contract` | Iframe-style arbitrary embedding is outside the public Nidomo security model. |
 | `<img>` | `<img>` | `supported_with_limits` | `html-policy-v2` | HTML <img> is accepted by the current Nidomo document profile. |
 | `<input>` | `<input>` | `supported_with_limits` | `html-policy-v2` | HTML <input> is accepted by the current Nidomo document profile. |
 | `<kbd>` | `<kbd>` | `supported_with_limits` | `html-policy-v2` | HTML <kbd> is accepted by the current Nidomo document profile. |
@@ -202,6 +195,13 @@ Evidence IDs are stable public references to the implementation contract, execut
 | `Luau` | `Luau` | `supported_with_limits` | `creator-standards-cutover`, `creator-build-selftest` | Supported Creator application source within Nidomo authority boundaries. |
 | `TypeScript` | `TypeScript` | `experimental` | `creator-standards-cutover`, `javascript-compiler-selftest`, `creator-build-selftest` | Default Creator application source direction; production integration is still in progress. |
 
+## nidomo
+
+| External / known term | Nidomo | Status | Evidence | Notes |
+|---|---|---|---|---|
+| `form submission` | `data-nidomo-service + data-nidomo-action` | `nidomo_extension` | `html-policy-v2`, `web-standards-selftest` | Forms can bind declaratively to an approved Nidomo service/action. |
+| `URL/URI scheme` | `nidomo://` | `nidomo_extension` | `nidomo-url-contract` | nidomo:// addresses logical Nidomo routes/deployments. |
+
 ## web-api
 
 | External / known term | Nidomo | Status | Evidence | Notes |
@@ -216,7 +216,7 @@ Evidence IDs are stable public references to the implementation contract, execut
 | `innerHTML` | `—` | `intentionally_unsupported` | `dlp8-web-facade-selftest` | No raw-markup innerHTML sink is exposed. |
 | `location.navigation` | `location/navigate` | `experimental` | `dlp8-web-facade-selftest` | Nidomo exposes a capability-mediated location.navigation analogue for page programs. |
 | `storage.origin` | `storageGet/storageSet/storageRemove/storageClear` | `experimental` | `dlp8-web-facade-selftest` | Nidomo exposes a capability-mediated storage.origin analogue for page programs. |
-| `arbitrary cross-origin fetch` | `—` | `intentionally_unsupported` | `billow-web-platform-contract` | Untrusted public pages do not receive arbitrary external HTTP access. |
+| `arbitrary cross-origin fetch` | `—` | `intentionally_unsupported` | `nidomo-web-platform-contract` | Untrusted public pages do not receive arbitrary external HTTP access. |
 
 ## Learning resources
 

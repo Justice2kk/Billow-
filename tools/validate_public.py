@@ -7,8 +7,8 @@ from urllib.parse import unquote
 
 ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/"compatibility"/"registry.json"
-STATUSES={"supported","supported_with_limits","experimental","unsupported","intentionally_unsupported","billow_extension","deprecated","planned"}
-NEEDS_PROOF={"supported","supported_with_limits","experimental","billow_extension"}
+STATUSES={"supported","supported_with_limits","experimental","unsupported","intentionally_unsupported","nidomo_extension","deprecated","planned"}
+NEEDS_PROOF={"supported","supported_with_limits","experimental","nidomo_extension"}
 EVIDENCE_KINDS={"implementation-contract","conformance-test","project-gate","architecture-contract"}
 FORBIDDEN=("GameServices/","LanguageMigration/","CURRENT_FRONTIER.md","PROJECT_STATE.json","BILLOW_CODEX_CHECKPOINT.md","CHATGPT_CHAT_HANDOFF.md","C:\\Work\\Cielori","C:\\Work\\Nidomo")
 LINK_RE=re.compile(r"(?<!!)\\[[^\\]]*\\]\\(([^)]+)\\)")
@@ -41,7 +41,7 @@ def render(d):
         out += ["",f"## {area}","","| External / known term | Nidomo | Status | Evidence | Notes |","|---|---|---|---|---|"]
         for f in sorted(areas[area],key=lambda x:x["id"]):
             evidence=", ".join(f"`{v['id']}`" for v in f.get("verification") or []) or "—"
-            out.append(f"| `{cell(f.get('external'))}` | `{cell(f.get('billow'))}` | `{f['status']}` | {evidence} | {cell(f.get('summary'))} |")
+            out.append(f"| `{cell(f.get('external'))}` | `{cell(f.get('nidomo'))}` | `{f['status']}` | {evidence} | {cell(f.get('summary'))} |")
     out += ["","## Learning resources",""]
     for k,r in sorted(d.get("resources",{}).items()):
         out.append(f"- **{r['label']}** — {r['url']} (`{k}`)")
@@ -110,7 +110,7 @@ def registry_errors(d):
         upstream=f.get("upstream")
         if upstream is not None and upstream not in resources:
             errors.append(f"{ident}: unknown upstream resource {upstream!r}")
-        if status=="intentionally_unsupported" and f.get("billow") not in (None,""):
+        if status=="intentionally_unsupported" and f.get("nidomo") not in (None,""):
             errors.append(f"{ident}: intentionally unsupported entry advertises a Nidomo equivalent")
 
     for evidence_id in sorted(set(evidence)-referenced):
