@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cielori-public-banner.webp" width="100%" alt="Cielori! Public repository — an illustrated look at a creative environment for apps, sites and developer tools." />
+  <img src="assets/nidomo-public-banner.webp" width="100%" alt="Cielori! Public repository — an illustrated look at a creative environment for apps, sites and developer tools." />
 </p>
 
 # Cielori — a platform to make things.
