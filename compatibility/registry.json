@@ -3,12 +3,12 @@
   "profile": "billow-public-preview-2026-10",
   "generatedDoc": "docs/compatibility/FEATURES.md",
   "statusDefinitions": {
-    "supported": "Available in the documented public profile without a material Cielori-specific limitation for the named concept.",
-    "supported_with_limits": "Available, but Cielori intentionally supports a bounded subset or documented divergence.",
+    "supported": "Available in the documented public profile without a material Nidomo-specific limitation for the named concept.",
+    "supported_with_limits": "Available, but Nidomo intentionally supports a bounded subset or documented divergence.",
     "experimental": "Implemented or under active integration; public shape/availability may change before certification.",
     "unsupported": "Not available in the current profile; future support is not committed.",
-    "intentionally_unsupported": "Deliberately excluded from the Cielori public model/security boundary.",
-    "billow_extension": "Cielori-native capability with no standards-equivalence claim.",
+    "intentionally_unsupported": "Deliberately excluded from the Nidomo public model/security boundary.",
+    "billow_extension": "Nidomo-native capability with no standards-equivalence claim.",
     "deprecated": "Legacy/superseded vocabulary retained for migration/history.",
     "planned": "Intended direction without a current implementation claim."
   },
@@ -59,7 +59,7 @@
       "kind": "implementation-contract",
       "label": "HTML document policy v2",
       "source": "HTML.DocumentVersion=2",
-      "description": "Authoritative bounded HTML policy that defines accepted document structure, elements, attributes, and Cielori form bindings."
+      "description": "Authoritative bounded HTML policy that defines accepted document structure, elements, attributes, and Nidomo form bindings."
     },
     "html-syntax-selftest": {
       "kind": "conformance-test",
@@ -71,7 +71,7 @@
       "kind": "conformance-test",
       "label": "Web standards self-test",
       "source": "WebStandardsSelfTest",
-      "description": "Executable integration coverage across the current HTML/CSS profile, including Cielori form bindings, CSS cascade behavior, scoped URLs, media queries, and explicit unsupported behavior."
+      "description": "Executable integration coverage across the current HTML/CSS profile, including Nidomo form bindings, CSS cascade behavior, scoped URLs, media queries, and explicit unsupported behavior."
     },
     "css-profile-3": {
       "kind": "implementation-contract",
@@ -113,19 +113,19 @@
       "kind": "conformance-test",
       "label": "DLP7 application facade self-test",
       "source": "DLP7ApplicationFacadeSelfTest",
-      "description": "Executable coverage for the Cielori application modules, capability checks, quotas, owned handles, and isolation boundaries."
+      "description": "Executable coverage for the Nidomo application modules, capability checks, quotas, owned handles, and isolation boundaries."
     },
     "billow-web-platform-contract": {
       "kind": "architecture-contract",
-      "label": "Billow web platform contract",
+      "label": "Nidomo web platform contract (legacy Billow identifier)",
       "source": "WebPlatformContract",
       "description": "Architecture boundary for hosted web capabilities, including mediated networking and the absence of unrestricted browser embedding semantics."
     },
     "billow-url-contract": {
       "kind": "architecture-contract",
-      "label": "Billow URL contract",
+      "label": "Nidomo URL contract (legacy Billow identifier)",
       "source": "BillowURL",
-      "description": "Architecture/implementation contract for Cielori-native URI parsing and routing."
+      "description": "Architecture/implementation contract for Nidomo-native URI parsing and routing."
     }
   },
   "features": [
@@ -136,8 +136,8 @@
       "external": "<body>",
       "billow": "<body>",
       "status": "supported_with_limits",
-      "summary": "HTML <body> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <body> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "body",
         "HTML body"
@@ -158,8 +158,8 @@
       "external": "<main>",
       "billow": "<main>",
       "status": "supported_with_limits",
-      "summary": "HTML <main> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <main> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "main",
         "HTML main"
@@ -180,8 +180,8 @@
       "external": "<header>",
       "billow": "<header>",
       "status": "supported_with_limits",
-      "summary": "HTML <header> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <header> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "header",
         "HTML header"
@@ -202,8 +202,8 @@
       "external": "<footer>",
       "billow": "<footer>",
       "status": "supported_with_limits",
-      "summary": "HTML <footer> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <footer> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "footer",
         "HTML footer"
@@ -224,8 +224,8 @@
       "external": "<nav>",
       "billow": "<nav>",
       "status": "supported_with_limits",
-      "summary": "HTML <nav> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <nav> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "nav",
         "HTML nav"
@@ -246,8 +246,8 @@
       "external": "<section>",
       "billow": "<section>",
       "status": "supported_with_limits",
-      "summary": "HTML <section> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <section> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "section",
         "HTML section"
@@ -268,8 +268,8 @@
       "external": "<article>",
       "billow": "<article>",
       "status": "supported_with_limits",
-      "summary": "HTML <article> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <article> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "article",
         "HTML article"
@@ -290,8 +290,8 @@
       "external": "<aside>",
       "billow": "<aside>",
       "status": "supported_with_limits",
-      "summary": "HTML <aside> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <aside> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "aside",
         "HTML aside"
@@ -312,8 +312,8 @@
       "external": "<div>",
       "billow": "<div>",
       "status": "supported_with_limits",
-      "summary": "HTML <div> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <div> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "div",
         "HTML div"
@@ -334,8 +334,8 @@
       "external": "<blockquote>",
       "billow": "<blockquote>",
       "status": "supported_with_limits",
-      "summary": "HTML <blockquote> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <blockquote> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "blockquote",
         "HTML blockquote"
@@ -356,8 +356,8 @@
       "external": "<figure>",
       "billow": "<figure>",
       "status": "supported_with_limits",
-      "summary": "HTML <figure> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <figure> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "figure",
         "HTML figure"
@@ -378,8 +378,8 @@
       "external": "<figcaption>",
       "billow": "<figcaption>",
       "status": "supported_with_limits",
-      "summary": "HTML <figcaption> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <figcaption> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "figcaption",
         "HTML figcaption"
@@ -400,8 +400,8 @@
       "external": "<h1>",
       "billow": "<h1>",
       "status": "supported_with_limits",
-      "summary": "HTML <h1> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <h1> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "h1",
         "HTML h1"
@@ -422,8 +422,8 @@
       "external": "<h2>",
       "billow": "<h2>",
       "status": "supported_with_limits",
-      "summary": "HTML <h2> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <h2> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "h2",
         "HTML h2"
@@ -444,8 +444,8 @@
       "external": "<h3>",
       "billow": "<h3>",
       "status": "supported_with_limits",
-      "summary": "HTML <h3> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <h3> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "h3",
         "HTML h3"
@@ -466,8 +466,8 @@
       "external": "<h4>",
       "billow": "<h4>",
       "status": "supported_with_limits",
-      "summary": "HTML <h4> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <h4> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "h4",
         "HTML h4"
@@ -488,8 +488,8 @@
       "external": "<h5>",
       "billow": "<h5>",
       "status": "supported_with_limits",
-      "summary": "HTML <h5> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <h5> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "h5",
         "HTML h5"
@@ -510,8 +510,8 @@
       "external": "<h6>",
       "billow": "<h6>",
       "status": "supported_with_limits",
-      "summary": "HTML <h6> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <h6> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "h6",
         "HTML h6"
@@ -532,8 +532,8 @@
       "external": "<p>",
       "billow": "<p>",
       "status": "supported_with_limits",
-      "summary": "HTML <p> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <p> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "p",
         "HTML p"
@@ -554,8 +554,8 @@
       "external": "<span>",
       "billow": "<span>",
       "status": "supported_with_limits",
-      "summary": "HTML <span> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <span> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "span",
         "HTML span"
@@ -576,8 +576,8 @@
       "external": "<strong>",
       "billow": "<strong>",
       "status": "supported_with_limits",
-      "summary": "HTML <strong> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <strong> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "strong",
         "HTML strong"
@@ -598,8 +598,8 @@
       "external": "<em>",
       "billow": "<em>",
       "status": "supported_with_limits",
-      "summary": "HTML <em> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <em> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "em",
         "HTML em"
@@ -620,8 +620,8 @@
       "external": "<small>",
       "billow": "<small>",
       "status": "supported_with_limits",
-      "summary": "HTML <small> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <small> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "small",
         "HTML small"
@@ -642,8 +642,8 @@
       "external": "<code>",
       "billow": "<code>",
       "status": "supported_with_limits",
-      "summary": "HTML <code> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <code> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "code",
         "HTML code"
@@ -664,8 +664,8 @@
       "external": "<mark>",
       "billow": "<mark>",
       "status": "supported_with_limits",
-      "summary": "HTML <mark> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <mark> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "mark",
         "HTML mark"
@@ -686,8 +686,8 @@
       "external": "<kbd>",
       "billow": "<kbd>",
       "status": "supported_with_limits",
-      "summary": "HTML <kbd> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <kbd> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "kbd",
         "HTML kbd"
@@ -708,8 +708,8 @@
       "external": "<samp>",
       "billow": "<samp>",
       "status": "supported_with_limits",
-      "summary": "HTML <samp> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <samp> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "samp",
         "HTML samp"
@@ -730,8 +730,8 @@
       "external": "<time>",
       "billow": "<time>",
       "status": "supported_with_limits",
-      "summary": "HTML <time> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <time> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "time",
         "HTML time"
@@ -752,8 +752,8 @@
       "external": "<pre>",
       "billow": "<pre>",
       "status": "supported_with_limits",
-      "summary": "HTML <pre> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <pre> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "pre",
         "HTML pre"
@@ -774,8 +774,8 @@
       "external": "<a>",
       "billow": "<a>",
       "status": "supported_with_limits",
-      "summary": "HTML <a> is accepted by the current Cielori document profile.",
-      "restrictions": "Navigation reference must pass Cielori navigation policy.",
+      "summary": "HTML <a> is accepted by the current Nidomo document profile.",
+      "restrictions": "Navigation reference must pass Nidomo navigation policy.",
       "searchTerms": [
         "a",
         "HTML a"
@@ -796,8 +796,8 @@
       "external": "<img>",
       "billow": "<img>",
       "status": "supported_with_limits",
-      "summary": "HTML <img> is accepted by the current Cielori document profile.",
-      "restrictions": "Requires src and bounded alt text; resource resolution is Cielori-controlled.",
+      "summary": "HTML <img> is accepted by the current Nidomo document profile.",
+      "restrictions": "Requires src and bounded alt text; resource resolution is Nidomo-controlled.",
       "searchTerms": [
         "img",
         "HTML img"
@@ -818,8 +818,8 @@
       "external": "<button>",
       "billow": "<button>",
       "status": "supported_with_limits",
-      "summary": "HTML <button> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <button> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "button",
         "HTML button"
@@ -840,8 +840,8 @@
       "external": "<form>",
       "billow": "<form>",
       "status": "supported_with_limits",
-      "summary": "HTML <form> is accepted by the current Cielori document profile.",
-      "restrictions": "Current form profile is Cielori service/action bound and POST-only.",
+      "summary": "HTML <form> is accepted by the current Nidomo document profile.",
+      "restrictions": "Current form profile is Nidomo service/action bound and POST-only.",
       "searchTerms": [
         "form",
         "HTML form"
@@ -862,8 +862,8 @@
       "external": "<label>",
       "billow": "<label>",
       "status": "supported_with_limits",
-      "summary": "HTML <label> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <label> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "label",
         "HTML label"
@@ -884,7 +884,7 @@
       "external": "<input>",
       "billow": "<input>",
       "status": "supported_with_limits",
-      "summary": "HTML <input> is accepted by the current Cielori document profile.",
+      "summary": "HTML <input> is accepted by the current Nidomo document profile.",
       "restrictions": "Current input types are text and search.",
       "searchTerms": [
         "input",
@@ -906,8 +906,8 @@
       "external": "<textarea>",
       "billow": "<textarea>",
       "status": "supported_with_limits",
-      "summary": "HTML <textarea> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <textarea> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "textarea",
         "HTML textarea"
@@ -928,8 +928,8 @@
       "external": "<ul>",
       "billow": "<ul>",
       "status": "supported_with_limits",
-      "summary": "HTML <ul> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <ul> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "ul",
         "HTML ul"
@@ -950,8 +950,8 @@
       "external": "<ol>",
       "billow": "<ol>",
       "status": "supported_with_limits",
-      "summary": "HTML <ol> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <ol> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "ol",
         "HTML ol"
@@ -972,8 +972,8 @@
       "external": "<li>",
       "billow": "<li>",
       "status": "supported_with_limits",
-      "summary": "HTML <li> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <li> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "li",
         "HTML li"
@@ -994,8 +994,8 @@
       "external": "<hr>",
       "billow": "<hr>",
       "status": "supported_with_limits",
-      "summary": "HTML <hr> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <hr> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "hr",
         "HTML hr"
@@ -1016,8 +1016,8 @@
       "external": "<br>",
       "billow": "<br>",
       "status": "supported_with_limits",
-      "summary": "HTML <br> is accepted by the current Cielori document profile.",
-      "restrictions": "Supported by the bounded Cielori HTML document profile; full browser behavior is not implied.",
+      "summary": "HTML <br> is accepted by the current Nidomo document profile.",
+      "restrictions": "Supported by the bounded Nidomo HTML document profile; full browser behavior is not implied.",
       "searchTerms": [
         "br",
         "HTML br"
@@ -1038,7 +1038,7 @@
       "external": "<table>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <table> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <table> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "table",
@@ -1060,7 +1060,7 @@
       "external": "<svg>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <svg> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <svg> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "svg",
@@ -1082,7 +1082,7 @@
       "external": "<math>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <math> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <math> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "math",
@@ -1104,7 +1104,7 @@
       "external": "<template>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <template> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <template> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "template",
@@ -1126,7 +1126,7 @@
       "external": "<select>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <select> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <select> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "select",
@@ -1148,7 +1148,7 @@
       "external": "<frameset>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <frameset> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <frameset> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "frameset",
@@ -1170,7 +1170,7 @@
       "external": "<plaintext>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <plaintext> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <plaintext> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "plaintext",
@@ -1192,7 +1192,7 @@
       "external": "<xmp>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <xmp> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <xmp> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "xmp",
@@ -1214,7 +1214,7 @@
       "external": "<noscript>",
       "billow": null,
       "status": "unsupported",
-      "summary": "HTML <noscript> is rejected by the current Cielori parser/profile.",
+      "summary": "HTML <noscript> is rejected by the current Nidomo parser/profile.",
       "restrictions": "No future compatibility commitment is implied.",
       "searchTerms": [
         "noscript",
@@ -1236,7 +1236,7 @@
       "external": "<iframe>",
       "billow": null,
       "status": "intentionally_unsupported",
-      "summary": "Iframe-style arbitrary embedding is outside the public Cielori security model.",
+      "summary": "Iframe-style arbitrary embedding is outside the public Nidomo security model.",
       "restrictions": "No arbitrary embedded external browsing context.",
       "searchTerms": [
         "iframe",
@@ -1258,7 +1258,7 @@
       "external": "display",
       "billow": "display",
       "status": "supported_with_limits",
-      "summary": "CSS display is recognized by Cielori CSS profile 3.",
+      "summary": "CSS display is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "display",
@@ -1280,7 +1280,7 @@
       "external": "position",
       "billow": "position",
       "status": "supported_with_limits",
-      "summary": "CSS position is recognized by Cielori CSS profile 3.",
+      "summary": "CSS position is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "position",
@@ -1302,7 +1302,7 @@
       "external": "top",
       "billow": "top",
       "status": "supported_with_limits",
-      "summary": "CSS top is recognized by Cielori CSS profile 3.",
+      "summary": "CSS top is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "top",
@@ -1324,7 +1324,7 @@
       "external": "right",
       "billow": "right",
       "status": "supported_with_limits",
-      "summary": "CSS right is recognized by Cielori CSS profile 3.",
+      "summary": "CSS right is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "right",
@@ -1346,7 +1346,7 @@
       "external": "bottom",
       "billow": "bottom",
       "status": "supported_with_limits",
-      "summary": "CSS bottom is recognized by Cielori CSS profile 3.",
+      "summary": "CSS bottom is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "bottom",
@@ -1368,7 +1368,7 @@
       "external": "left",
       "billow": "left",
       "status": "supported_with_limits",
-      "summary": "CSS left is recognized by Cielori CSS profile 3.",
+      "summary": "CSS left is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "left",
@@ -1390,7 +1390,7 @@
       "external": "width",
       "billow": "width",
       "status": "supported_with_limits",
-      "summary": "CSS width is recognized by Cielori CSS profile 3.",
+      "summary": "CSS width is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "width",
@@ -1412,7 +1412,7 @@
       "external": "height",
       "billow": "height",
       "status": "supported_with_limits",
-      "summary": "CSS height is recognized by Cielori CSS profile 3.",
+      "summary": "CSS height is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "height",
@@ -1434,7 +1434,7 @@
       "external": "min-width",
       "billow": "min-width",
       "status": "supported_with_limits",
-      "summary": "CSS min-width is recognized by Cielori CSS profile 3.",
+      "summary": "CSS min-width is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "min-width",
@@ -1456,7 +1456,7 @@
       "external": "min-height",
       "billow": "min-height",
       "status": "supported_with_limits",
-      "summary": "CSS min-height is recognized by Cielori CSS profile 3.",
+      "summary": "CSS min-height is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "min-height",
@@ -1478,7 +1478,7 @@
       "external": "max-width",
       "billow": "max-width",
       "status": "supported_with_limits",
-      "summary": "CSS max-width is recognized by Cielori CSS profile 3.",
+      "summary": "CSS max-width is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "max-width",
@@ -1500,7 +1500,7 @@
       "external": "max-height",
       "billow": "max-height",
       "status": "supported_with_limits",
-      "summary": "CSS max-height is recognized by Cielori CSS profile 3.",
+      "summary": "CSS max-height is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "max-height",
@@ -1522,7 +1522,7 @@
       "external": "flex-direction",
       "billow": "flex-direction",
       "status": "supported_with_limits",
-      "summary": "CSS flex-direction is recognized by Cielori CSS profile 3.",
+      "summary": "CSS flex-direction is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "flex-direction",
@@ -1544,7 +1544,7 @@
       "external": "flex-wrap",
       "billow": "flex-wrap",
       "status": "supported_with_limits",
-      "summary": "CSS flex-wrap is recognized by Cielori CSS profile 3.",
+      "summary": "CSS flex-wrap is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "flex-wrap",
@@ -1566,7 +1566,7 @@
       "external": "flex-grow",
       "billow": "flex-grow",
       "status": "supported_with_limits",
-      "summary": "CSS flex-grow is recognized by Cielori CSS profile 3.",
+      "summary": "CSS flex-grow is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "flex-grow",
@@ -1588,7 +1588,7 @@
       "external": "flex-shrink",
       "billow": "flex-shrink",
       "status": "supported_with_limits",
-      "summary": "CSS flex-shrink is recognized by Cielori CSS profile 3.",
+      "summary": "CSS flex-shrink is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "flex-shrink",
@@ -1610,7 +1610,7 @@
       "external": "flex-basis",
       "billow": "flex-basis",
       "status": "supported_with_limits",
-      "summary": "CSS flex-basis is recognized by Cielori CSS profile 3.",
+      "summary": "CSS flex-basis is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "flex-basis",
@@ -1632,7 +1632,7 @@
       "external": "align-self",
       "billow": "align-self",
       "status": "supported_with_limits",
-      "summary": "CSS align-self is recognized by Cielori CSS profile 3.",
+      "summary": "CSS align-self is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "align-self",
@@ -1654,7 +1654,7 @@
       "external": "order",
       "billow": "order",
       "status": "supported_with_limits",
-      "summary": "CSS order is recognized by Cielori CSS profile 3.",
+      "summary": "CSS order is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "order",
@@ -1676,7 +1676,7 @@
       "external": "align-items",
       "billow": "align-items",
       "status": "supported_with_limits",
-      "summary": "CSS align-items is recognized by Cielori CSS profile 3.",
+      "summary": "CSS align-items is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "align-items",
@@ -1698,7 +1698,7 @@
       "external": "justify-content",
       "billow": "justify-content",
       "status": "supported_with_limits",
-      "summary": "CSS justify-content is recognized by Cielori CSS profile 3.",
+      "summary": "CSS justify-content is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "justify-content",
@@ -1720,7 +1720,7 @@
       "external": "margin",
       "billow": "margin",
       "status": "supported_with_limits",
-      "summary": "CSS margin is recognized by Cielori CSS profile 3.",
+      "summary": "CSS margin is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "margin",
@@ -1742,7 +1742,7 @@
       "external": "margin-top",
       "billow": "margin-top",
       "status": "supported_with_limits",
-      "summary": "CSS margin-top is recognized by Cielori CSS profile 3.",
+      "summary": "CSS margin-top is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "margin-top",
@@ -1764,7 +1764,7 @@
       "external": "margin-right",
       "billow": "margin-right",
       "status": "supported_with_limits",
-      "summary": "CSS margin-right is recognized by Cielori CSS profile 3.",
+      "summary": "CSS margin-right is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "margin-right",
@@ -1786,7 +1786,7 @@
       "external": "margin-bottom",
       "billow": "margin-bottom",
       "status": "supported_with_limits",
-      "summary": "CSS margin-bottom is recognized by Cielori CSS profile 3.",
+      "summary": "CSS margin-bottom is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "margin-bottom",
@@ -1808,7 +1808,7 @@
       "external": "margin-left",
       "billow": "margin-left",
       "status": "supported_with_limits",
-      "summary": "CSS margin-left is recognized by Cielori CSS profile 3.",
+      "summary": "CSS margin-left is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "margin-left",
@@ -1830,7 +1830,7 @@
       "external": "padding",
       "billow": "padding",
       "status": "supported_with_limits",
-      "summary": "CSS padding is recognized by Cielori CSS profile 3.",
+      "summary": "CSS padding is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "padding",
@@ -1852,7 +1852,7 @@
       "external": "padding-top",
       "billow": "padding-top",
       "status": "supported_with_limits",
-      "summary": "CSS padding-top is recognized by Cielori CSS profile 3.",
+      "summary": "CSS padding-top is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "padding-top",
@@ -1874,7 +1874,7 @@
       "external": "padding-right",
       "billow": "padding-right",
       "status": "supported_with_limits",
-      "summary": "CSS padding-right is recognized by Cielori CSS profile 3.",
+      "summary": "CSS padding-right is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "padding-right",
@@ -1896,7 +1896,7 @@
       "external": "padding-bottom",
       "billow": "padding-bottom",
       "status": "supported_with_limits",
-      "summary": "CSS padding-bottom is recognized by Cielori CSS profile 3.",
+      "summary": "CSS padding-bottom is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "padding-bottom",
@@ -1918,7 +1918,7 @@
       "external": "padding-left",
       "billow": "padding-left",
       "status": "supported_with_limits",
-      "summary": "CSS padding-left is recognized by Cielori CSS profile 3.",
+      "summary": "CSS padding-left is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "padding-left",
@@ -1940,7 +1940,7 @@
       "external": "gap",
       "billow": "gap",
       "status": "supported_with_limits",
-      "summary": "CSS gap is recognized by Cielori CSS profile 3.",
+      "summary": "CSS gap is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "gap",
@@ -1962,7 +1962,7 @@
       "external": "font-family",
       "billow": "font-family",
       "status": "supported_with_limits",
-      "summary": "CSS font-family is recognized by Cielori CSS profile 3.",
+      "summary": "CSS font-family is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "font-family",
@@ -1984,7 +1984,7 @@
       "external": "font-size",
       "billow": "font-size",
       "status": "supported_with_limits",
-      "summary": "CSS font-size is recognized by Cielori CSS profile 3.",
+      "summary": "CSS font-size is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "font-size",
@@ -2006,7 +2006,7 @@
       "external": "font-weight",
       "billow": "font-weight",
       "status": "supported_with_limits",
-      "summary": "CSS font-weight is recognized by Cielori CSS profile 3.",
+      "summary": "CSS font-weight is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "font-weight",
@@ -2028,7 +2028,7 @@
       "external": "font-style",
       "billow": "font-style",
       "status": "supported_with_limits",
-      "summary": "CSS font-style is recognized by Cielori CSS profile 3.",
+      "summary": "CSS font-style is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "font-style",
@@ -2050,7 +2050,7 @@
       "external": "line-height",
       "billow": "line-height",
       "status": "supported_with_limits",
-      "summary": "CSS line-height is recognized by Cielori CSS profile 3.",
+      "summary": "CSS line-height is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "line-height",
@@ -2072,7 +2072,7 @@
       "external": "text-align",
       "billow": "text-align",
       "status": "supported_with_limits",
-      "summary": "CSS text-align is recognized by Cielori CSS profile 3.",
+      "summary": "CSS text-align is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "text-align",
@@ -2094,7 +2094,7 @@
       "external": "color",
       "billow": "color",
       "status": "supported_with_limits",
-      "summary": "CSS color is recognized by Cielori CSS profile 3.",
+      "summary": "CSS color is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "color",
@@ -2116,7 +2116,7 @@
       "external": "background",
       "billow": "background",
       "status": "supported_with_limits",
-      "summary": "CSS background is recognized by Cielori CSS profile 3.",
+      "summary": "CSS background is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "background",
@@ -2138,7 +2138,7 @@
       "external": "background-color",
       "billow": "background-color",
       "status": "supported_with_limits",
-      "summary": "CSS background-color is recognized by Cielori CSS profile 3.",
+      "summary": "CSS background-color is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "background-color",
@@ -2160,7 +2160,7 @@
       "external": "background-image",
       "billow": "background-image",
       "status": "supported_with_limits",
-      "summary": "CSS background-image is recognized by Cielori CSS profile 3.",
+      "summary": "CSS background-image is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "background-image",
@@ -2182,7 +2182,7 @@
       "external": "background-size",
       "billow": "background-size",
       "status": "supported_with_limits",
-      "summary": "CSS background-size is recognized by Cielori CSS profile 3.",
+      "summary": "CSS background-size is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "background-size",
@@ -2204,7 +2204,7 @@
       "external": "background-position",
       "billow": "background-position",
       "status": "supported_with_limits",
-      "summary": "CSS background-position is recognized by Cielori CSS profile 3.",
+      "summary": "CSS background-position is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "background-position",
@@ -2226,7 +2226,7 @@
       "external": "opacity",
       "billow": "opacity",
       "status": "supported_with_limits",
-      "summary": "CSS opacity is recognized by Cielori CSS profile 3.",
+      "summary": "CSS opacity is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "opacity",
@@ -2248,7 +2248,7 @@
       "external": "overflow",
       "billow": "overflow",
       "status": "supported_with_limits",
-      "summary": "CSS overflow is recognized by Cielori CSS profile 3.",
+      "summary": "CSS overflow is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "overflow",
@@ -2270,7 +2270,7 @@
       "external": "pointer-events",
       "billow": "pointer-events",
       "status": "supported_with_limits",
-      "summary": "CSS pointer-events is recognized by Cielori CSS profile 3.",
+      "summary": "CSS pointer-events is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "pointer-events",
@@ -2292,7 +2292,7 @@
       "external": "white-space",
       "billow": "white-space",
       "status": "supported_with_limits",
-      "summary": "CSS white-space is recognized by Cielori CSS profile 3.",
+      "summary": "CSS white-space is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "white-space",
@@ -2314,7 +2314,7 @@
       "external": "text-decoration",
       "billow": "text-decoration",
       "status": "supported_with_limits",
-      "summary": "CSS text-decoration is recognized by Cielori CSS profile 3.",
+      "summary": "CSS text-decoration is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "text-decoration",
@@ -2336,7 +2336,7 @@
       "external": "border-radius",
       "billow": "border-radius",
       "status": "supported_with_limits",
-      "summary": "CSS border-radius is recognized by Cielori CSS profile 3.",
+      "summary": "CSS border-radius is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "border-radius",
@@ -2358,7 +2358,7 @@
       "external": "border",
       "billow": "border",
       "status": "supported_with_limits",
-      "summary": "CSS border is recognized by Cielori CSS profile 3.",
+      "summary": "CSS border is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "border",
@@ -2380,7 +2380,7 @@
       "external": "border-width",
       "billow": "border-width",
       "status": "supported_with_limits",
-      "summary": "CSS border-width is recognized by Cielori CSS profile 3.",
+      "summary": "CSS border-width is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "border-width",
@@ -2402,7 +2402,7 @@
       "external": "border-style",
       "billow": "border-style",
       "status": "supported_with_limits",
-      "summary": "CSS border-style is recognized by Cielori CSS profile 3.",
+      "summary": "CSS border-style is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "border-style",
@@ -2424,7 +2424,7 @@
       "external": "border-color",
       "billow": "border-color",
       "status": "supported_with_limits",
-      "summary": "CSS border-color is recognized by Cielori CSS profile 3.",
+      "summary": "CSS border-color is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "border-color",
@@ -2446,7 +2446,7 @@
       "external": "object-fit",
       "billow": "object-fit",
       "status": "supported_with_limits",
-      "summary": "CSS object-fit is recognized by Cielori CSS profile 3.",
+      "summary": "CSS object-fit is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "object-fit",
@@ -2468,7 +2468,7 @@
       "external": "user-select",
       "billow": "user-select",
       "status": "supported_with_limits",
-      "summary": "CSS user-select is recognized by Cielori CSS profile 3.",
+      "summary": "CSS user-select is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "user-select",
@@ -2490,7 +2490,7 @@
       "external": "aspect-ratio",
       "billow": "aspect-ratio",
       "status": "supported_with_limits",
-      "summary": "CSS aspect-ratio is recognized by Cielori CSS profile 3.",
+      "summary": "CSS aspect-ratio is recognized by Nidomo CSS profile 3.",
       "restrictions": "Only the documented renderer-faithful value subset is promised.",
       "searchTerms": [
         "aspect-ratio",
@@ -2513,7 +2513,7 @@
       "billow": ":hover",
       "status": "supported_with_limits",
       "summary": ":hover is accepted by the current selector profile.",
-      "restrictions": "State is Cielori document/renderer state, not an unrestricted browser DOM.",
+      "restrictions": "State is Nidomo document/renderer state, not an unrestricted browser DOM.",
       "searchTerms": [
         "hover",
         ":hover"
@@ -2535,7 +2535,7 @@
       "billow": ":focus",
       "status": "supported_with_limits",
       "summary": ":focus is accepted by the current selector profile.",
-      "restrictions": "State is Cielori document/renderer state, not an unrestricted browser DOM.",
+      "restrictions": "State is Nidomo document/renderer state, not an unrestricted browser DOM.",
       "searchTerms": [
         "focus",
         ":focus"
@@ -2557,7 +2557,7 @@
       "billow": ":disabled",
       "status": "supported_with_limits",
       "summary": ":disabled is accepted by the current selector profile.",
-      "restrictions": "State is Cielori document/renderer state, not an unrestricted browser DOM.",
+      "restrictions": "State is Nidomo document/renderer state, not an unrestricted browser DOM.",
       "searchTerms": [
         "disabled",
         ":disabled"
@@ -2579,7 +2579,7 @@
       "billow": ":checked",
       "status": "supported_with_limits",
       "summary": ":checked is accepted by the current selector profile.",
-      "restrictions": "State is Cielori document/renderer state, not an unrestricted browser DOM.",
+      "restrictions": "State is Nidomo document/renderer state, not an unrestricted browser DOM.",
       "searchTerms": [
         "checked",
         ":checked"
@@ -2601,7 +2601,7 @@
       "billow": ":first-child",
       "status": "supported_with_limits",
       "summary": ":first-child is accepted by the current selector profile.",
-      "restrictions": "State is Cielori document/renderer state, not an unrestricted browser DOM.",
+      "restrictions": "State is Nidomo document/renderer state, not an unrestricted browser DOM.",
       "searchTerms": [
         "first-child",
         ":first-child"
@@ -2623,7 +2623,7 @@
       "billow": ":last-child",
       "status": "supported_with_limits",
       "summary": ":last-child is accepted by the current selector profile.",
-      "restrictions": "State is Cielori document/renderer state, not an unrestricted browser DOM.",
+      "restrictions": "State is Nidomo document/renderer state, not an unrestricted browser DOM.",
       "searchTerms": [
         "last-child",
         ":last-child"
@@ -2812,7 +2812,7 @@
       "external": "px, %, vw, vh",
       "billow": "px, %, vw, vh",
       "status": "supported_with_limits",
-      "summary": "Core Cielori length units are supported where the property accepts them.",
+      "summary": "Core Nidomo length units are supported where the property accepts them.",
       "restrictions": "Check property/value-specific limits.",
       "searchTerms": [
         "px, %, vw, vh"
@@ -2918,7 +2918,7 @@
       "billow": "TypeScript",
       "status": "experimental",
       "summary": "Default Creator application source direction; production integration is still in progress.",
-      "restrictions": "Language availability never bypasses Cielori capabilities/sandboxing.",
+      "restrictions": "Language availability never bypasses Nidomo capabilities/sandboxing.",
       "searchTerms": [
         "TypeScript"
       ],
@@ -2947,7 +2947,7 @@
       "billow": "JavaScript",
       "status": "experimental",
       "summary": "Standards source path exists; production integration is still in progress.",
-      "restrictions": "Language availability never bypasses Cielori capabilities/sandboxing.",
+      "restrictions": "Language availability never bypasses Nidomo capabilities/sandboxing.",
       "searchTerms": [
         "JavaScript"
       ],
@@ -2975,8 +2975,8 @@
       "external": "Luau",
       "billow": "Luau",
       "status": "supported_with_limits",
-      "summary": "Supported Creator application source within Cielori authority boundaries.",
-      "restrictions": "Language availability never bypasses Cielori capabilities/sandboxing.",
+      "summary": "Supported Creator application source within Nidomo authority boundaries.",
+      "restrictions": "Language availability never bypasses Nidomo capabilities/sandboxing.",
       "searchTerms": [
         "Luau"
       ],
@@ -3001,7 +3001,7 @@
       "billow": "HTML",
       "status": "deprecated",
       "summary": "Legacy authoring vocabulary; new web direction is HTML.",
-      "restrictions": "Language availability never bypasses Cielori capabilities/sandboxing.",
+      "restrictions": "Language availability never bypasses Nidomo capabilities/sandboxing.",
       "searchTerms": [
         "JML",
         "HTML"
@@ -3023,7 +3023,7 @@
       "billow": "CSS",
       "status": "deprecated",
       "summary": "Legacy authoring vocabulary; new web direction is CSS.",
-      "restrictions": "Language availability never bypasses Cielori capabilities/sandboxing.",
+      "restrictions": "Language availability never bypasses Nidomo capabilities/sandboxing.",
       "searchTerms": [
         "JSS",
         "CSS"
@@ -3045,10 +3045,10 @@
       "billow": "TypeScript (.ts)",
       "status": "deprecated",
       "summary": "Legacy extension; new TypeScript authoring uses .ts.",
-      "restrictions": "Language availability never bypasses Cielori capabilities/sandboxing.",
+      "restrictions": "Language availability never bypasses Nidomo capabilities/sandboxing.",
       "searchTerms": [
         "Billow TypeScript (.bts)",
-        "Cielori TypeScript (.bts)",
+        "Nidomo TypeScript (.bts)",
         "TypeScript (.ts)"
       ],
       "verification": [
@@ -3067,7 +3067,7 @@
       "external": "document.getElementById",
       "billow": "getElementById",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated document.getElementById analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated document.getElementById analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "document.getElementById",
@@ -3090,7 +3090,7 @@
       "external": "document.querySelector",
       "billow": "querySelector",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated document.querySelector analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated document.querySelector analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "document.querySelector",
@@ -3113,7 +3113,7 @@
       "external": "element.textContent",
       "billow": "textContent/setTextContent",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated element.textContent analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated element.textContent analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "element.textContent",
@@ -3136,7 +3136,7 @@
       "external": "element.attributes",
       "billow": "getAttribute/setAttribute/removeAttribute",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated element.attributes analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated element.attributes analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "element.attributes",
@@ -3159,7 +3159,7 @@
       "external": "element.classList",
       "billow": "classAdd/classRemove/classToggle/classContains",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated element.classList analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated element.classList analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "element.classList",
@@ -3182,7 +3182,7 @@
       "external": "element.events",
       "billow": "addEventListener/removeEventListener",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated element.events analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated element.events analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "element.events",
@@ -3205,7 +3205,7 @@
       "external": "storage.origin",
       "billow": "storageGet/storageSet/storageRemove/storageClear",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated storage.origin analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated storage.origin analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "storage.origin",
@@ -3228,7 +3228,7 @@
       "external": "fetch.same-origin",
       "billow": "request",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated fetch.same-origin analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated fetch.same-origin analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "fetch.same-origin",
@@ -3251,7 +3251,7 @@
       "external": "location.navigation",
       "billow": "location/navigate",
       "status": "experimental",
-      "summary": "Cielori exposes a capability-mediated location.navigation analogue for page programs.",
+      "summary": "Nidomo exposes a capability-mediated location.navigation analogue for page programs.",
       "restrictions": "Bounded/same-origin/capability constrained; no raw Roblox objects or complete browser DOM.",
       "searchTerms": [
         "location.navigation",
@@ -3297,7 +3297,7 @@
       "billow": null,
       "status": "intentionally_unsupported",
       "summary": "Untrusted public pages do not receive arbitrary external HTTP access.",
-      "restrictions": "Requests are mediated by Cielori origin/capability policy.",
+      "restrictions": "Requests are mediated by Nidomo origin/capability policy.",
       "searchTerms": [
         "HTTP request",
         "fetch external",
@@ -3319,7 +3319,7 @@
       "external": "URL/URI scheme",
       "billow": "billow://",
       "status": "billow_extension",
-      "summary": "billow:// addresses logical Cielori routes/deployments.",
+      "summary": "billow:// addresses logical Nidomo routes/deployments.",
       "restrictions": "It is not a raw Internet transport.",
       "searchTerms": [
         "billow://",
@@ -3342,7 +3342,7 @@
       "external": "form submission",
       "billow": "data-billow-service + data-billow-action",
       "status": "billow_extension",
-      "summary": "Forms can bind declaratively to an approved Cielori service/action.",
+      "summary": "Forms can bind declaratively to an approved Nidomo service/action.",
       "restrictions": "Current profile uses validated identifiers and POST.",
       "searchTerms": [
         "form submit",
