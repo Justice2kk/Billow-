@@ -1,16 +1,16 @@
-# What works in Cielori? ☑️
+# What works in Nidomo? ☑️
 
-**The compatibility guide without the technical headache.** Wondering whether you can build something in Cielori? Start here.
+**The compatibility guide without the technical headache.** Wondering whether you can build something in Nidomo? Start here.
 
 [**Making a website? ↓**](#websites-html) · [**Making an app? ↓**](#apps-and-programming) · [**Full technical list →**](FEATURES.md)
 
 > **Reading the checklist**
 >
-> - **☑️ / `[x]`** — supported **within Cielori's documented limits**. A check does *not* mean full browser compatibility.
+> - **☑️ / `[x]`** — supported **within Nidomo's documented limits**. A check does *not* mean full browser compatibility.
 > - **🧪** — experimental; the feature or public-facing behavior can change.
 > - **☐ / `[ ]`** — not supported in the current profile. **Unchecked items are not a development to-do list.**
 > - **🚫** — intentionally excluded for security or platform-design reasons.
-> - **💠** — a Cielori-specific feature rather than a standard browser API.
+> - **💠** — a Nidomo-specific feature rather than a standard browser API.
 >
 > This is a **curated overview** of the [public compatibility registry](../../compatibility/registry.json) (`billow-public-preview-2026-10`). The [full compatibility index](FEATURES.md) is the source for exact feature coverage, limitations and evidence. Internal tests do not mean every feature is already in a publicly playable release.
 
@@ -21,10 +21,10 @@
 - [x] **Headings, paragraphs and basic text** — `h1`–`h6`, `p`, `span`, `strong`, `em` and similar elements.
 - [x] **Page structure** — `main`, `header`, `nav`, `section`, `article`, `div`, etc.
 - [x] **Lists** — `ul`, `ol` and `li`.
-- [x] **Links** — `a`, as long as navigation is allowed by Cielori.
+- [x] **Links** — `a`, as long as navigation is allowed by Nidomo.
 - [x] **Images** — `img`, with approved resources plus valid `src` and `alt`.
 - [x] **Buttons and text fields** — `button`, `label`, `textarea`, `input` (text/search only).
-- [x] **Simple forms** — supported **only** through approved Cielori service/action **POST** submissions.
+- [x] **Simple forms** — supported **only** through approved Nidomo service/action **POST** submissions.
 
 ### ☐ Not currently supported
 
@@ -56,7 +56,7 @@
 - [ ] **Attribute selectors**, such as `[data-role="card"]`.
 - [ ] **Pseudo-elements**, such as `::before` and `::after`.
 
-**Heads-up:** Cielori supports a *subset* of properties and values. For example, `px`, `%`, `vw` and `vh` exist only where the property accepts them. An ordinary CSS tutorial is a good starting point—not a guarantee.
+**Heads-up:** Nidomo supports a *subset* of properties and values. For example, `px`, `%`, `vw` and `vh` exist only where the property accepts them. An ordinary CSS tutorial is a good starting point—not a guarantee.
 
 [CSS guide →](../web/CSS.md) · [Every CSS feature →](FEATURES.md#css)
 
@@ -64,9 +64,9 @@
 
 | Language | Status | What you should know |
 | --- | --- | --- |
-| **TypeScript** | 🧪 Public profile: experimental | Cielori's **default** Creator-app language, with accepted internal workflows; public toolchain availability is a separate question. |
+| **TypeScript** | 🧪 Public profile: experimental | Nidomo's **default** Creator-app language, with accepted internal workflows; public toolchain availability is a separate question. |
 | **JavaScript** | 🧪 Public profile: experimental | Creator-app alternative, subject to the public runtime contract. |
-| **Luau** | ☑️ Supported with limits | Supported inside Cielori's controlled application runtime, **not** with unrestricted Roblox-engine access. |
+| **Luau** | ☑️ Supported with limits | Supported inside Nidomo's controlled application runtime, **not** with unrestricted Roblox-engine access. |
 | **JML, JSS and `.bts`** | ↩️ Legacy | Retained for compatibility/history. Start new sites in **HTML/CSS** and new TypeScript projects in `.ts`. |
 
 ### 🧪 Interactive websites
@@ -79,19 +79,19 @@ These kinds of page scripting exist but are **experimental** in the public compa
 - 🧪 Saving origin-scoped page data.
 - 🧪 Same-origin requests and navigation.
 
-These are controlled Cielori **analogues**, not every browser DOM/JavaScript API.
+These are controlled Nidomo **analogues**, not every browser DOM/JavaScript API.
 
 [Start making an app →](../getting-started/BUILD_AN_APP.md) · [Language details →](FEATURES.md#language) · [Web APIs →](FEATURES.md#web-api)
 
-## 💠 Cielori-specific features
+## 💠 Nidomo-specific features
 
-- 💠 **`billow://`** — Cielori's own website addressing and routing, **not** ordinary Internet DNS.
-- 💠 **Cielori forms** — `data-billow-service` and `data-billow-action` for authorized POST actions.
+- 💠 **`billow://`** — Nidomo's own website addressing and routing, **not** ordinary Internet DNS.
+- 💠 **Nidomo forms** — `data-billow-service` and `data-billow-action` for authorized POST actions.
 - 💠 **App services** — `@billow/app`, `@billow/windows`, `@billow/files`, `@billow/storage`, `@billow/ipc`, `@billow/notifications`, `@billow/clipboard` and `@billow/logging`.
 
-An API existing doesn't automatically grant your app permission to use it. Cielori controls which resources and operations an app may access.
+An API existing doesn't automatically grant your app permission to use it. Nidomo controls which resources and operations an app may access.
 
-[Application API guide →](../applications/README.md) · [Cielori-specific compatibility →](FEATURES.md#billow)
+[Application API guide →](../applications/README.md) · [Nidomo-specific compatibility →](FEATURES.md#billow)
 
 ## 🚫 Not allowed by design
 
@@ -108,11 +108,11 @@ These aren't just missing checkmarks. They are intentional platform boundaries.
 | --- | --- |
 | A small personal website with images and links | ☑️ **Yes**, within the HTML/CSS profile. |
 | A nice responsive page using flexbox | ☑️ **Yes**, with the supported values and width queries. |
-| A form that submits data | ☑️ **With limits** — approved Cielori service/action POST only. |
+| A form that submits data | ☑️ **With limits** — approved Nidomo service/action POST only. |
 | A complex JavaScript-powered website | 🧪 **Maybe partly** — check each page API and available runtime. |
 | A site that embeds another webpage | 🚫 **No** — arbitrary iframes are excluded. |
 | A spreadsheet-like page using HTML tables | ☐ **Not with `table`** in this profile. |
-| An application with its own window and storage | 💠 **Cielori-native**, subject to Creator availability and granted permissions. |
+| An application with its own window and storage | 💠 **Nidomo-native**, subject to Creator availability and granted permissions. |
 
 **Want an exact answer?** Find the specific element, property or API in the [full feature index](FEATURES.md).
 

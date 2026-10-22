@@ -8,11 +8,11 @@
 
 | Symbol | Meaning |
 | --- | --- |
-| ☑️ | Works within Cielori's documented limits |
+| ☑️ | Works within Nidomo's documented limits |
 | 🧪 | Experimental; details or availability may change |
 | ☐ | Not available in the current profile |
 | 🚫 | Intentionally excluded |
-| 💠 | Cielori-native |
+| 💠 | Nidomo-native |
 | ↩️ | Older/deprecated authoring format |
 
 **Which reference is authoritative?** The [machine-readable feature registry](../../compatibility/registry.json). The [full index](FEATURES.md) is generated from it. The [short checklist](CHECKLIST.md) is a curated introduction; it does not replace the precise feature definitions.
