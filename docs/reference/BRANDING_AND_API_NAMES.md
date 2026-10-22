@@ -1,23 +1,31 @@
-# Nidomo's name and the existing API names
+# Nidomo identity and current API names
 
-**Nidomo** is the current public-facing name of the platform, previously known as **Cielori** and originally **BillowOS**. **Nimo** is the mascot's current name (formerly **Billo**).
+**Nidomo** is the current platform name, following **Cielori** and originally **BillowOS**. The mascot is **Nimo** (formerly **Billo**); older demo-user/package vocabulary used **billock**, now **nidomi**.
 
-The product has a new identity, but a brand update does **not** automatically rename protocols, package imports, existing saved projects, or the underlying Roblox runtime. Creator code must continue to use the documented contracts until verified replacements exist.
+## Clean-break technical identity
 
-| What you see | What to do right now |
+Nidomo deliberately reset its runtime identity and persistent platform namespaces rather than migrating old Billow OS user data. The **current** names creators should use are:
+
+| Area | Current Nidomo contract |
 | --- | --- |
-| **Nidomo** | Current name of the platform, documentation and creator ecosystem. |
-| **Nimo** | Current name of the mascot; older material may show Billo. |
-| `billow://` | Use the existing documented URI scheme for now. Do **not** assume `nidomo://` has shipped. |
-| `@billow/app`, `@billow/files`, etc. | Keep documented import specifiers until the runtime confirms compatible Nidomo equivalents. |
-| `data-billow-service`, `data-billow-action` | Retain the accepted HTML form attributes until a supported migration is published. |
-| `billow_extension`, registry field `billow`, `billow-public-preview-2026-10` | Existing compatibility schema/status/profile identifiers; **not** the current product name. |
-| JML / JSS / `.bts` | Historical authoring formats. New web work should prefer HTML/CSS; new applications use the documented TypeScript-first path where available. |
+| Platform and ecosystem | **Nidomo OS**, **Nidomo Web**, **Nidomo Store**, **Nidomo Creator** |
+| Site/Browser addresses | `nidomo://` |
+| SDK import namespace | `@nidomo/*` (for example `@nidomo/app`, `@nidomo/files`) |
+| First-party package/service identities | `org.nidomo.*` |
+| Creator project manifest | `nidomo.project.json` |
+| Local workspace state | `.nidomo/` |
+| Nidomo HTML form bindings | `data-nidomo-service`, `data-nidomo-action` |
+| Mascot | **Nimo** |
+| Demo-user/package vocabulary | **nidomi** |
 
-**What has changed?** Public branding, community-facing language and names in guides and examples.
+The former `billow://`, `@billow/*`, `org.billow.*`, `billow.project.json` and `.billow/` identifiers are **not** the current creator contract. Do not begin new projects using them; do not assume an old URI, installed package, workspace or saved data can be reopened under the new identity.
 
-**What is not established by this repository?** That the executable runtime, API namespaces, URI schemes, saved files, asset identifiers or package IDs were all migrated concurrently. Do not rename technical identifiers in your own existing code simply because the project was rebranded.
+This decision does **not** imply that old Roblox DataStores were physically deleted. The new runtime uses isolated storage namespaces instead, so abandoned pre-Nidomo data is not part of the current user environment.
 
-For supported capabilities and their limitations, use the [public compatibility index](../compatibility/FEATURES.md) and [registry](../../compatibility/registry.json). A future API migration must be communicated with explicit compatibility and upgrade guidance.
+### Development and availability
+
+The public documentation describes supported concepts and currently defined contracts, **not** a claim that every feature is generally released in Roblox. Some code paths or sample projects may be limited, experimental or only internally tested. Check the [compatibility index](../compatibility/FEATURES.md) for each feature's actual documented status.
+
+The history of Cielori and BillowOS remains in the [changelog](../../CHANGELOG.md); those names are historical context, not alternate active SDKs.
 
 [← Public repository](../../README.md) · [Compatibility checklist](../compatibility/CHECKLIST.md)

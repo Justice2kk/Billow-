@@ -50,7 +50,7 @@ A Nidomo site starts with recognizable web files, not a secret new syntax:
 
 **Everyday things:** a desktop, windows, Files, a Browser, a Store and familiar navigation.  
 **Creative things:** Sites for web projects, a Creator workflow, and **Loom** for making applications.  
-**Underneath:** a permission-aware platform for apps, files, packages and Nidomo's own `billow://` web.
+**Underneath:** a permission-aware platform for apps, files, packages and Nidomo's own `nidomo://` web.
 
 It's one environment. You don't have to enter a special “developer mode” to be curious.
 
@@ -58,7 +58,7 @@ Meet **Nimo**, Nidomo's mascot—a familiar face for the project and its growing
 
 ## A new name, the same creative platform
 
-**Nidomo** is the current name of the project formerly known as **Cielori**, and originally **BillowOS**. Some technical names, such as `billow://`, `@billow/*` and `data-billow-*`, remain in the current documented platform contracts. **Don't rename those in your code** unless an official migration guide says to. [Learn why →](docs/reference/BRANDING_AND_API_NAMES.md)
+**Nidomo** succeeds **Cielori** (originally **BillowOS**). The previous Billow and Cielori platform identities are retired. Current creator-facing contracts use `nidomo://`, `@nidomo/*` and Nidomo's documented form bindings. **This was a clean break:** old Billow OS user data, installed packages and links are not migrated or promised to work. See the [identity guide](docs/reference/BRANDING_AND_API_NAMES.md). [Learn why →](docs/reference/BRANDING_AND_API_NAMES.md)
 
 ## Where the project stands
 

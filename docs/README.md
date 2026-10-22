@@ -20,7 +20,7 @@ You don't need to read these docs in order. Pick a question and jump in.
 - [Web development](web/README.md) · [HTML](web/HTML.md) · [CSS](web/CSS.md)
 - [Nidomo application APIs](applications/README.md)
 - [File and resource model](filesystem/README.md)
-- [`billow://` addresses](reference/URI_SCHEMES.md)
+- [`nidomo://` addresses](reference/URI_SCHEMES.md)
 - [Quick compatibility checklist](compatibility/CHECKLIST.md) · [Full feature index](compatibility/FEATURES.md)
 - [How the platform fits together](architecture/SYSTEM_OVERVIEW.md)
 - [Full glossary](reference/GLOSSARY.md)

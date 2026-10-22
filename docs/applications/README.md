@@ -12,14 +12,14 @@ Nidomo applications use controlled platform APIs rather than reaching into Roblo
 
 | API | What it's for |
 | --- | --- |
-| `@billow/app` | App identity, launch information and lifecycle |
-| `@billow/windows` | Windows owned by your app |
-| `@billow/files` | Access to files you're allowed to use |
-| `@billow/storage` | Your app's stored data/settings |
-| `@billow/ipc` | Communication with permitted services |
-| `@billow/notifications` | Notifications where granted |
-| `@billow/clipboard` | Permission-scoped clipboard use |
-| `@billow/logging` | Application diagnostics |
+| `@nidomo/app` | App identity, launch information and lifecycle |
+| `@nidomo/windows` | Windows owned by your app |
+| `@nidomo/files` | Access to files you're allowed to use |
+| `@nidomo/storage` | Your app's stored data/settings |
+| `@nidomo/ipc` | Communication with permitted services |
+| `@nidomo/notifications` | Notifications where granted |
+| `@nidomo/clipboard` | Permission-scoped clipboard use |
+| `@nidomo/logging` | Application diagnostics |
 
 ### An important rule
 
