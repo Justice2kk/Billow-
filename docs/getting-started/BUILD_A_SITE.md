@@ -51,7 +51,7 @@ Start with familiar tags, classes, flex layouts, colors and links. Check before 
 - [HTML support](../web/HTML.md)
 - [CSS support](../web/CSS.md)
 - [Feature-by-feature compatibility](../compatibility/FEATURES.md)
-- [How `billow://` works](../reference/URI_SCHEMES.md)
+- [How `nidomo://` works](../reference/URI_SCHEMES.md)
 
 **Tip:** If a feature doesn't work, it may be outside Nidomo's current profile—not necessarily an error in your HTML.
 

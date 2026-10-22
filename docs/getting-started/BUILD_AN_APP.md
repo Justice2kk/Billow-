@@ -20,11 +20,11 @@ Instead of grabbing arbitrary Roblox engine objects, apps use **Nidomo-owned API
 
 | I want my app to… | Look at |
 | --- | --- |
-| Know how it was launched | [`@billow/app`](../applications/README.md) |
-| Show a window | [`@billow/windows`](../applications/README.md) |
-| Open an allowed file | [`@billow/files`](../applications/README.md) |
-| Save its own settings/data | [`@billow/storage`](../applications/README.md) |
-| Talk to a permitted service | [`@billow/ipc`](../applications/README.md) |
+| Know how it was launched | [`@nidomo/app`](../applications/README.md) |
+| Show a window | [`@nidomo/windows`](../applications/README.md) |
+| Open an allowed file | [`@nidomo/files`](../applications/README.md) |
+| Save its own settings/data | [`@nidomo/storage`](../applications/README.md) |
+| Talk to a permitted service | [`@nidomo/ipc`](../applications/README.md) |
 
 The exact API shape, granted capabilities and runtime availability depend on the accepted Nidomo application contract.
 

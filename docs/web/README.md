@@ -4,7 +4,7 @@ If you've made a website before, much of this will feel familiar.
 
 **HTML** describes the page. **CSS** styles it. **Nidomo's Browser** displays it inside Roblox.
 
-The difference is that Nidomo deliberately supports **a smaller, safer web profile**, plus its own `billow://` addresses and permission model.
+The difference is that Nidomo deliberately supports **a smaller, safer web profile**, plus its own `nidomo://` addresses and permission model.
 
 ## Start with a page, not a specification
 
@@ -19,7 +19,7 @@ The difference is that Nidomo deliberately supports **a smaller, safer web profi
 | HTML content, links, buttons and images | [HTML profile](HTML.md) |
 | CSS colors, typography, flex, spacing and responsive rules | [CSS profile](CSS.md) |
 | JS/TS page behavior | [Feature-specific experimental coverage](../compatibility/FEATURES.md) |
-| Nidomo addresses, navigation and routes | [`billow://` guide](../reference/URI_SCHEMES.md) |
+| Nidomo addresses, navigation and routes | [`nidomo://` guide](../reference/URI_SCHEMES.md) |
 | Exact supported vs. limited features | [Compatibility index](../compatibility/FEATURES.md) |
 
 ### Familiar isn't identical

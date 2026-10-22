@@ -12,6 +12,6 @@ Nidomo accepts a bounded HTML profile and turns it into an inert document model 
 
 The current profile includes common structural/semantic elements, headings/paragraphs, phrasing elements, lists, links, images, buttons and a bounded form profile. Exact entries are in the [compatibility index](../compatibility/FEATURES.md).
 
-Important restrictions: links use approved navigation references; images require `src` and bounded UTF-8 `alt`; forms are currently Nidomo service-bound with `data-billow-service` and `data-billow-action` plus POST; current input types are text/search; tables/SVG/MathML/template/select are not current profile features; iframe-style embedding is intentionally outside the public security model.
+Important restrictions: links use approved navigation references; images require `src` and bounded UTF-8 `alt`; forms are currently Nidomo service-bound with `data-nidomo-service` and `data-nidomo-action` plus POST; current input types are text/search; tables/SVG/MathML/template/select are not current profile features; iframe-style embedding is intentionally outside the public security model.
 
-`data-billow-service` and `data-billow-action` are **Nidomo extensions**. Ordinary HTML form knowledge transfers conceptually, but authority is resolved by Nidomo rather than an arbitrary Internet endpoint.
+`data-nidomo-service` and `data-nidomo-action` are **Nidomo extensions**. Ordinary HTML form knowledge transfers conceptually, but authority is resolved by Nidomo rather than an arbitrary Internet endpoint.

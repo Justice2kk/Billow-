@@ -12,7 +12,7 @@
 > - **🚫** — intentionally excluded for security or platform-design reasons.
 > - **💠** — a Nidomo-specific feature rather than a standard browser API.
 >
-> This is a **curated overview** of the [public compatibility registry](../../compatibility/registry.json) (`billow-public-preview-2026-10`). The [full compatibility index](FEATURES.md) is the source for exact feature coverage, limitations and evidence. Internal tests do not mean every feature is already in a publicly playable release.
+> This is a **curated overview** of the [public compatibility registry](../../compatibility/registry.json) (`nidomo-public-preview-2026-10`). The [full compatibility index](FEATURES.md) is the source for exact feature coverage, limitations and evidence. Internal tests do not mean every feature is already in a publicly playable release.
 
 ## Websites (HTML)
 
@@ -85,13 +85,13 @@ These are controlled Nidomo **analogues**, not every browser DOM/JavaScript API.
 
 ## 💠 Nidomo-specific features
 
-- 💠 **`billow://`** — Nidomo's own website addressing and routing, **not** ordinary Internet DNS.
-- 💠 **Nidomo forms** — `data-billow-service` and `data-billow-action` for authorized POST actions.
-- 💠 **App services** — `@billow/app`, `@billow/windows`, `@billow/files`, `@billow/storage`, `@billow/ipc`, `@billow/notifications`, `@billow/clipboard` and `@billow/logging`.
+- 💠 **`nidomo://`** — Nidomo's own website addressing and routing, **not** ordinary Internet DNS.
+- 💠 **Nidomo forms** — `data-nidomo-service` and `data-nidomo-action` for authorized POST actions.
+- 💠 **App services** — `@nidomo/app`, `@nidomo/windows`, `@nidomo/files`, `@nidomo/storage`, `@nidomo/ipc`, `@nidomo/notifications`, `@nidomo/clipboard` and `@nidomo/logging`.
 
 An API existing doesn't automatically grant your app permission to use it. Nidomo controls which resources and operations an app may access.
 
-[Application API guide →](../applications/README.md) · [Nidomo-specific compatibility →](FEATURES.md#billow)
+[Application API guide →](../applications/README.md) · [Nidomo-specific compatibility →](FEATURES.md#nidomo)
 
 ## 🚫 Not allowed by design
 
