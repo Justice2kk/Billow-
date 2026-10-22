@@ -1,6 +1,6 @@
-# Make something with Cielori applications
+# Make something with Nidomo applications
 
-A website is one way to create. An **application** is another: an installed Cielori program that can use windows, files, app-owned storage and other permitted services.
+A website is one way to create. An **application** is another: an installed Nidomo program that can use windows, files, app-owned storage and other permitted services.
 
 You shouldn't need to become a Roblox engine programmer just to understand the app model.
 
@@ -8,7 +8,7 @@ You shouldn't need to become a Roblox engine programmer just to understand the a
 
 | Language | Why you might choose it |
 | --- | --- |
-| **TypeScript** | The default Cielori Creator authoring language. |
+| **TypeScript** | The default Nidomo Creator authoring language. |
 | **JavaScript** | Familiar if you already build for the web. |
 | **Luau** | Familiar if you already create Roblox experiences. |
 
@@ -16,7 +16,7 @@ The core project has accepted internal Check / Build / Run flows and a Creator â
 
 ## What an app can work with
 
-Instead of grabbing arbitrary Roblox engine objects, apps use **Cielori-owned APIs**:
+Instead of grabbing arbitrary Roblox engine objects, apps use **Nidomo-owned APIs**:
 
 | I want my app toâ€¦ | Look at |
 | --- | --- |
@@ -26,7 +26,7 @@ Instead of grabbing arbitrary Roblox engine objects, apps use **Cielori-owned AP
 | Save its own settings/data | [`@billow/storage`](../applications/README.md) |
 | Talk to a permitted service | [`@billow/ipc`](../applications/README.md) |
 
-The exact API shape, granted capabilities and runtime availability depend on the accepted Cielori application contract.
+The exact API shape, granted capabilities and runtime availability depend on the accepted Nidomo application contract.
 
 ## A sensible first app
 

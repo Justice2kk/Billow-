@@ -1,6 +1,6 @@
-# Welcome to Cielori!
+# Welcome to Nidomo!
 
-**Cielori is a creative computing environment inside Roblox.** Think of a familiar desktop with files, apps and windows, plus the ability to make and share things using Cielori's tools.
+**Nidomo is a creative computing environment inside Roblox.** Think of a familiar desktop with files, apps and windows, plus the ability to make and share things using Nidomo's tools.
 
 You can explore without writing code. You can create when you're ready. Both happen in the same place.
 
@@ -8,7 +8,7 @@ You can explore without writing code. You can create when you're ready. Both hap
 
 **The desktop** is where you open and organize things: apps, files, settings and the Browser.
 
-**The Browser** opens sites on the Cielori web. A `billow://` address belongs to Cielori's own routing system, not the public Internet.
+**The Browser** opens sites on the Nidomo web. A `billow://` address belongs to Nidomo's own routing system, not the public Internet.
 
 **Sites** is where you work on website projects. The modern authoring path uses HTML and CSS.
 
@@ -28,11 +28,11 @@ You don't have to learn what a kernel, process or capability is to use any of th
 | “Wait, is this actual Windows?” | [Frequently asked questions](FAQ.md) |
 | “Explain what's happening underneath.” | [Platform overview](../architecture/SYSTEM_OVERVIEW.md) |
 
-## What makes Cielori different?
+## What makes Nidomo different?
 
-Cielori isn't trying to mimic every part of a conventional computer. Roblox handles the real engine and hardware. Cielori adds its own controlled model for apps, files, windows, permissions and websites.
+Nidomo isn't trying to mimic every part of a conventional computer. Roblox handles the real engine and hardware. Nidomo adds its own controlled model for apps, files, windows, permissions and websites.
 
-That means familiar concepts often carry over **without every feature being identical**. For example, HTML and CSS are useful here, but Cielori supports a [specific documented subset](../web/README.md), and a page cannot simply access Roblox services.
+That means familiar concepts often carry over **without every feature being identical**. For example, HTML and CSS are useful here, but Nidomo supports a [specific documented subset](../web/README.md), and a page cannot simply access Roblox services.
 
 ### What can I use today?
 

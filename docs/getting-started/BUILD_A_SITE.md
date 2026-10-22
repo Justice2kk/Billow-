@@ -1,8 +1,8 @@
-# Make your first Cielori page
+# Make your first Nidomo page
 
 You already know the best part: if you've seen HTML and CSS before, you can start with familiar ideas.
 
-Cielori's Browser renders a **bounded HTML/CSS profile** inside Roblox. It isn't a full copy of the regular web, so build from the small, documented set first.
+Nidomo's Browser renders a **bounded HTML/CSS profile** inside Roblox. It isn't a full copy of the regular web, so build from the small, documented set first.
 
 ## 1. Look at the example
 
@@ -23,7 +23,7 @@ Here's the simplest idea:
 
 ```html
 <main>
-  <h1>My corner of Cielori</h1>
+  <h1>My corner of Nidomo</h1>
   <p>I'm making something of my own.</p>
 </main>
 ```
@@ -38,7 +38,7 @@ main {
 
 ## 3. Move into Sites when you have access
 
-In a running Cielori build that exposes the accepted Sites workflow, the general journey is **create a site project → edit → preview → build → publish inside Cielori → open it in the Browser**.
+In a running Nidomo build that exposes the accepted Sites workflow, the general journey is **create a site project → edit → preview → build → publish inside Nidomo → open it in the Browser**.
 
 The core project has tested that internal journey for static HTML/CSS. The exact entry screens and release availability may differ; this public repository doesn't provide an external CLI, installable template or imaginary publishing manifest.
 
@@ -53,6 +53,6 @@ Start with familiar tags, classes, flex layouts, colors and links. Check before 
 - [Feature-by-feature compatibility](../compatibility/FEATURES.md)
 - [How `billow://` works](../reference/URI_SCHEMES.md)
 
-**Tip:** If a feature doesn't work, it may be outside Cielori's current profile—not necessarily an error in your HTML.
+**Tip:** If a feature doesn't work, it may be outside Nidomo's current profile—not necessarily an error in your HTML.
 
 [← Back to getting started](OVERVIEW.md)
