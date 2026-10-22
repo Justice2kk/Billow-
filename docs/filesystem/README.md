@@ -1,6 +1,6 @@
 # Public file model
 
-Public application APIs work with Cielori-managed file/resource concepts and **opaque handles**, not arbitrary Roblox filesystem/Instance access.
+Public application APIs work with Nidomo-managed file/resource concepts and **opaque handles**, not arbitrary Roblox filesystem/Instance access.
 
 A handle represents already-authorized access to an object. Read/stat/write/close remain capability checked, and a caller cannot gain authority by fabricating a path or identifier.
 

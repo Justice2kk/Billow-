@@ -1,6 +1,6 @@
 # HTML profile
 
-Cielori accepts a bounded HTML profile and turns it into an inert document model for controlled rendering. It is closer to HTML syntax/semantics than legacy JML authoring while rejecting browser features Cielori cannot or should not reproduce.
+Nidomo accepts a bounded HTML profile and turns it into an inert document model for controlled rendering. It is closer to HTML syntax/semantics than legacy JML authoring while rejecting browser features Nidomo cannot or should not reproduce.
 
 ## Document behavior
 
@@ -12,6 +12,6 @@ Cielori accepts a bounded HTML profile and turns it into an inert document model
 
 The current profile includes common structural/semantic elements, headings/paragraphs, phrasing elements, lists, links, images, buttons and a bounded form profile. Exact entries are in the [compatibility index](../compatibility/FEATURES.md).
 
-Important restrictions: links use approved navigation references; images require `src` and bounded UTF-8 `alt`; forms are currently Cielori service-bound with `data-billow-service` and `data-billow-action` plus POST; current input types are text/search; tables/SVG/MathML/template/select are not current profile features; iframe-style embedding is intentionally outside the public security model.
+Important restrictions: links use approved navigation references; images require `src` and bounded UTF-8 `alt`; forms are currently Nidomo service-bound with `data-billow-service` and `data-billow-action` plus POST; current input types are text/search; tables/SVG/MathML/template/select are not current profile features; iframe-style embedding is intentionally outside the public security model.
 
-`data-billow-service` and `data-billow-action` are **Cielori extensions**. Ordinary HTML form knowledge transfers conceptually, but authority is resolved by Cielori rather than an arbitrary Internet endpoint.
+`data-billow-service` and `data-billow-action` are **Nidomo extensions**. Ordinary HTML form knowledge transfers conceptually, but authority is resolved by Nidomo rather than an arbitrary Internet endpoint.

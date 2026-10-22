@@ -1,10 +1,10 @@
 # Glossary
 
-**Capability** — explicit authority granted by Cielori to perform a bounded operation. A manifest/API request is not itself a grant.
+**Capability** — explicit authority granted by Nidomo to perform a bounded operation. A manifest/API request is not itself a grant.
 
 **Handle** — opaque, context-bound reference to a resource such as a file or window.
 
-**Origin** — security identity for a Cielori web document/site. Origin-scoped state is isolated.
+**Origin** — security identity for a Nidomo web document/site. Origin-scoped state is isolated.
 
 **Deployment** — immutable built/published website revision selected by a route.
 
@@ -12,7 +12,7 @@
 
 **Page program** — sandboxed behavior for a web document; lower trust than the Browser shell.
 
-**Cielori-native / extension** — capability designed for Cielori without claiming standards equivalence.
+**Nidomo-native / extension** — capability designed for Nidomo without claiming standards equivalence.
 
 **Supported with limits** — familiar knowledge transfers, but only the documented subset is promised.
 
